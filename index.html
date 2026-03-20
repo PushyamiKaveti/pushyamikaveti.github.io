@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Pushyami Kaveti | Robotics Researcher</title>
+    <meta name="description" content="Dr. Pushyami Kaveti - Postdoctoral Fellow at MBARI. Research in multi-camera perception, 3D reconstruction, SLAM, underwater and field robotics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">PK</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#fieldwork">Fieldwork</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Dr. Pushyami Kaveti</h1>
+            <p class="hero-title">Postdoctoral Fellow</p>
+            <p class="hero-affiliation">Monterey Bay Aquarium Research Institute (MBARI)</p>
+            <p class="hero-tagline">Multi-camera perception &bull; 3D Reconstruction &bull; SLAM &bull; Underwater &amp; Field Robotics</p>
+            <div class="hero-cta">
+                <a href="#research" class="btn btn-primary">Explore My Research</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-links">
+                <a href="https://scholar.google.com/citations?hl=en&user=oIiOy68AAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/PushyamiKaveti" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pushhyamiikaaveeti/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.mbari.org/person/pushyami-kaveti/" target="_blank" title="MBARI Profile"><i class="fas fa-building-columns"></i></a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="hero-image-ring">
+                <img src="https://www.mbari.org/wp-content/uploads/PKaveti2_web.jpg" alt="Dr. Pushyami Kaveti" class="hero-image">
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p class="about-intro">I am a Postdoctoral Fellow at the <strong>Monterey Bay Aquarium Research Institute (MBARI)</strong>, where I work on multi-modal perception for underwater robots. My research spans multi-camera sensing, 3D reconstruction, and Simultaneous Localization and Mapping (SLAM) in dynamic and visually degraded environments &mdash; from the deep ocean to Arctic glaciers.</p>
+                <p>I earned my Ph.D. in Computer Science (Robotics) from <strong>Northeastern University</strong>, advised by Dr. Hanumant Singh, with thesis committee members from MIT and Toyota Research Institute. My work has taken me to some of the most extreme environments on Earth, including the Arctic, Antarctic, and deep ocean, where I design and deploy perception systems on autonomous and remotely operated vehicles.</p>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Multi-Camera SLAM</h4>
+                        <p>Generic visual SLAM frameworks for arbitrary multi-camera configurations</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-water"></i>
+                        <h4>Underwater Perception</h4>
+                        <p>Multi-modal sensing for AUV/ROV navigation and mapping</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-mountain"></i>
+                        <h4>Extreme Environments</h4>
+                        <p>Field deployments in Arctic, Antarctic, and deep-sea settings</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>Deep Learning</h4>
+                        <p>Self-supervised learning for object detection and scene understanding</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-sidebar">
+                <div class="education-timeline">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2016 &ndash; 2022</span>
+                        <h4>Ph.D. Computer Science (Robotics)</h4>
+                        <p>Northeastern University</p>
+                        <p class="timeline-detail"><em>Multi-Camera Sensing for Robust Perception in Robotics</em></p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2012 &ndash; 2014</span>
+                        <h4>M.S. Computer Engineering</h4>
+                        <p>University of Florida</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2007 &ndash; 2011</span>
+                        <h4>B.Tech. Computer Science &amp; Engineering</h4>
+                        <p>JNTU Anantapur, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Research Section -->
+<section class="section research" id="research">
+    <div class="container">
+        <h2 class="section-title">Research</h2>
+        <p class="section-subtitle">Building robust perception systems for robots operating in the world's most challenging environments</p>
+
+        <div class="research-grid">
+
+            <div class="research-card" data-category="underwater">
+                <div class="research-card-accent"></div>
+                <div class="research-icon"><i class="fas fa-water"></i></div>
+                <h3>Multi-Modal Underwater Perception</h3>
+                <span class="research-venue">MBARI &bull; Current</span>
+                <p>Multi-modal representation learning for underwater navigation and mapping via fusion of optical and acoustic sensing for AUVs and ROVs. Self-supervised learning to enhance object detection, scene understanding, and semantic mapping.</p>
+                <div class="research-tags">
+                    <span>AUV/ROV</span><span>Sensor Fusion</span><span>Self-Supervised Learning</span>
+                </div>
+            </div>
+
+            <div class="research-card" data-category="3d">
+                <div class="research-card-accent"></div>
+                <div class="research-icon"><i class="fas fa-cubes"></i></div>
+                <h3>3D Gaussian Splatting for Dense Mapping</h3>
+                <span class="research-venue">MBARI &bull; Current</span>
+                <p>Multi-modal adaptations of 3D Gaussian splatting for real-time, large-scale dense mapping of underwater environments, enabling high-fidelity reconstruction of subsea scenes.</p>
+                <div class="research-tags">
+                    <span>3D Gaussian Splatting</span><span>Dense Mapping</span><span>Real-Time</span>
+                </div>
+            </div>
+
+            <div class="research-card" data-category="slam">
+                <div class="research-card-accent"></div>
+                <div class="research-icon"><i class="fas fa-camera"></i></div>
+                <h3>Multi-Camera Visual SLAM</h3>
+                <span class="research-venue">IEEE RA-L 2023 &bull; ICRA 2024</span>
+                <p>A generic visual SLAM framework supporting arbitrary multi-camera configurations using generalized camera models. Evaluated across indoor/outdoor datasets with challenging scenarios.</p>
+                <div class="research-tags">
+                    <span>Visual SLAM</span><span>Multi-Camera</span><span>Generalized Camera</span>
+                </div>
+                <div class="research-links">
+                    <a href="https://arxiv.org/pdf/2210.07315.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                    <a href="https://github.com/neufieldrobotics/MultiCamSLAM" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://youtu.be/55hwdmTZOi4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                </div>
+            </div>
+
+            <div class="research-card" data-category="slam">
+                <div class="research-card-accent"></div>
+                <div class="research-icon"><i class="fas fa-cogs"></i></div>
+                <h3>OASIS: Optimal Sensor Arrangement for SLAM</h3>
+                <span class="research-venue">ICRA 2024</span>
+                <p>Information-theoretic approaches for optimal sensor arrangement on mobile robots, determining the best camera mount points for accurate and robust SLAM performance.</p>
+                <div class="research-tags">
+                    <span>Information Theory</span><span>Sensor Placement</span><span>Optimization</span>
+                </div>
+                <div class="research-links">
+                    <a href="https://arxiv.org/abs/2309.10698" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                    <a href="https://github.com/PushyamiKaveti/optimal_camera_placement" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="research-card" data-category="underwater">
+                <div class="research-card-accent"></div>
+                <div class="research-icon"><i class="fas fa-ship"></i></div>
+                <h3>Underwater Situational Awareness</h3>
+                <span class="research-venue">NTNU &bull; ICRA Workshop 2025</span>
+                <p>Enhancing situational awareness for autonomous and remotely operated underwater vehicles via multi-camera perception and sensor fusion for pipeline inspection and subsea infrastructure mapping.</p>
+                <div class="research-tags">
+                    <span>ROV</span><span>Subsea Inspection</span><span>Dense Reconstruction</span>
+                </div>
+            </div>
+
+            <div class="research-card" data-category="slam">
+                <div class="research-card-accent"></div>
+                <div class="research-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>Light Field SLAM in Dynamic Environments</h3>
+                <span class="research-venue">IEEE MFI 2021</span>
+                <p>A light field front-end for robust VSLAM that removes dynamic objects using synthetic aperture imaging combined with semantic segmentation, achieving near real-time performance.</p>
+                <div class="research-tags">
+                    <span>Light Fields</span><span>Dynamic Scenes</span><span>Semantic Segmentation</span>
+                </div>
+                <div class="research-links">
+                    <a href="https://arxiv.org/abs/2003.11076" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                </div>
+            </div>
+
+            <div class="research-card" data-category="3d">
+                <div class="research-card-accent"></div>
+                <div class="research-icon"><i class="fas fa-mountain-sun"></i></div>
+                <h3>Arctic Glacier 3D Mapping</h3>
+                <span class="research-venue">Svalbard Expedition 2023</span>
+                <p>3D mapping of dynamically calving glaciers using multi-sensor fusion of data collected from an Autonomous Surface Vehicle at Ny Alesund Arctic research station in Svalbard.</p>
+                <div class="research-tags">
+                    <span>ASV</span><span>Structure from Motion</span><span>Arctic</span>
+                </div>
+            </div>
+
+            <div class="research-card" data-category="other">
+                <div class="research-card-accent"></div>
+                <div class="research-icon"><i class="fas fa-fish"></i></div>
+                <h3>Automated Underwater Species Detection</h3>
+                <span class="research-venue">OCEANS 2018</span>
+                <p>Human-in-the-loop learning for automated fish detection using CNNs with color-corrected underwater imagery and an automated ground-truth labeling pipeline.</p>
+                <div class="research-tags">
+                    <span>CNN</span><span>Marine Biology</span><span>Object Detection</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Fieldwork Section -->
+<section class="section fieldwork" id="fieldwork">
+    <div class="container">
+        <h2 class="section-title">Field Deployments</h2>
+        <p class="section-subtitle">Deploying robotic systems from the Arctic to the Antarctic</p>
+
+        <div class="field-stats">
+            <div class="field-stat">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Expeditions</span>
+            </div>
+            <div class="field-stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Countries</span>
+            </div>
+            <div class="field-stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Continents</span>
+            </div>
+            <div class="field-stat">
+                <span class="stat-number">79°N&ndash;68°S</span>
+                <span class="stat-label">Latitude Range</span>
+            </div>
+        </div>
+
+        <div class="field-map-wrapper">
+            <svg class="field-map" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+                <g class="map-grid">
+                    <line x1="0" y1="83" x2="1000" y2="83"/>
+                    <line x1="0" y1="167" x2="1000" y2="167"/>
+                    <line x1="0" y1="250" x2="1000" y2="250"/>
+                    <line x1="0" y1="333" x2="1000" y2="333"/>
+                    <line x1="0" y1="417" x2="1000" y2="417"/>
+                    <line x1="167" y1="0" x2="167" y2="500"/>
+                    <line x1="333" y1="0" x2="333" y2="500"/>
+                    <line x1="500" y1="0" x2="500" y2="500"/>
+                    <line x1="667" y1="0" x2="667" y2="500"/>
+                    <line x1="833" y1="0" x2="833" y2="500"/>
+                </g>
+                <g class="map-land">
+                    <path d="M55,68 L85,58 L120,50 L150,58 L175,72 L200,90 L230,102 L255,118 L275,148 L285,178 L278,195 L258,208 L238,198 L218,205 L198,198 L178,182 L158,168 L132,158 L108,142 L82,118 Z"/>
+                    <path d="M338,38 L368,28 L392,38 L390,65 L372,74 L348,68 Z"/>
+                    <path d="M262,228 L288,235 L308,265 L318,305 L312,348 L298,382 L278,402 L262,388 L252,348 L248,305 L252,265 Z"/>
+                    <path d="M472,92 L492,78 L518,70 L538,80 L552,98 L552,118 L542,128 L528,132 L512,122 L502,118 L488,122 L478,108 Z"/>
+                    <path d="M482,172 L512,162 L542,172 L558,202 L562,242 L558,282 L542,318 L522,338 L508,318 L498,282 L488,242 L480,202 Z"/>
+                    <path d="M552,102 L598,82 L658,68 L718,65 L778,75 L828,88 L858,108 L868,138 L852,162 L832,172 L798,168 L758,158 L718,152 L678,160 L638,168 L598,158 L568,138 Z"/>
+                    <path d="M788,308 L822,298 L852,308 L862,332 L852,355 L822,360 L798,348 L788,328 Z"/>
+                    <path d="M50,478 L200,468 L400,472 L600,468 L800,472 L950,478 L900,488 L700,492 L500,495 L300,492 L100,488 Z"/>
+                </g>
+                <g class="map-pin" data-index="0">
+                    <circle cx="64" cy="52" r="16" class="pin-ring"/>
+                    <circle cx="64" cy="52" r="5" class="pin-dot"/>
+                    <text x="80" y="48" class="pin-label">Utqiagvik</text>
+                    <text x="80" y="62" class="pin-sublabel">71°N</text>
+                </g>
+                <g class="map-pin" data-index="1">
+                    <circle cx="33" cy="56" r="16" class="pin-ring"/>
+                    <circle cx="33" cy="56" r="5" class="pin-dot"/>
+                    <text x="10" y="80" class="pin-label">Chukchi Sea</text>
+                    <text x="10" y="94" class="pin-sublabel">70°N</text>
+                </g>
+                <g class="map-pin" data-index="2">
+                    <circle cx="529" cy="74" r="16" class="pin-ring"/>
+                    <circle cx="529" cy="74" r="5" class="pin-dot"/>
+                    <text x="548" y="70" class="pin-label">Trondheim</text>
+                    <text x="548" y="84" class="pin-sublabel">63°N</text>
+                </g>
+                <g class="map-pin" data-index="3">
+                    <circle cx="533" cy="31" r="16" class="pin-ring"/>
+                    <circle cx="533" cy="31" r="5" class="pin-dot"/>
+                    <text x="552" y="27" class="pin-label">Svalbard</text>
+                    <text x="552" y="41" class="pin-sublabel">79°N</text>
+                </g>
+                <g class="map-pin" data-index="4">
+                    <circle cx="311" cy="438" r="16" class="pin-ring"/>
+                    <circle cx="311" cy="438" r="5" class="pin-dot"/>
+                    <text x="330" y="434" class="pin-label">Rothera</text>
+                    <text x="330" y="448" class="pin-sublabel">68°S</text>
+                </g>
+                <g class="map-pin" data-index="5">
+                    <circle cx="230" cy="170" r="16" class="pin-ring"/>
+                    <circle cx="230" cy="170" r="5" class="pin-dot"/>
+                    <text x="248" y="166" class="pin-label">USA</text>
+                    <text x="248" y="180" class="pin-sublabel">DARPA</text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="field-entries">
+            <div class="field-entry" data-index="0">
+                <div class="entry-marker"></div>
+                <div class="entry-content">
+                    <div class="entry-header">
+                        <span class="entry-coords">71.3°N, 156.8°W</span>
+                        <span class="entry-date">Aug 2025</span>
+                    </div>
+                    <h4>ROV Survey of Whale Bones</h4>
+                    <span class="entry-location">Utqiagvik, Alaska</span>
+                    <p>ROV survey studying the ecological significance of subsistence whale remains. Imagery used to construct and label 3D models and detect changes over time.</p>
+                </div>
+            </div>
+            <div class="field-entry" data-index="1">
+                <div class="entry-marker"></div>
+                <div class="entry-content">
+                    <div class="entry-header">
+                        <span class="entry-coords">70°N, 168°W</span>
+                        <span class="entry-date">Oct 2024</span>
+                    </div>
+                    <h4>Sea Ice Survey from USCGC Healy</h4>
+                    <span class="entry-location">Chukchi Sea, Alaska</span>
+                    <p>Led ROV survey of freshly forming pancake sea ice aboard the Icebreaker Healy, collecting imagery and telemetry to analyze structural properties of Arctic sea ice.</p>
+                </div>
+            </div>
+            <div class="field-entry" data-index="2">
+                <div class="entry-marker"></div>
+                <div class="entry-content">
+                    <div class="entry-header">
+                        <span class="entry-coords">63.4°N, 10.4°E</span>
+                        <span class="entry-date">Jun 2024</span>
+                    </div>
+                    <h4>ROV Minerva &mdash; Shipwreck Mapping</h4>
+                    <span class="entry-location">Trondheim, Norway</span>
+                    <p>Integrated multi-camera rig with inertial sensing on ROV Minerva to inspect subsea infrastructure and the shipwreck Hercules in the Trondheim fjord.</p>
+                </div>
+            </div>
+            <div class="field-entry" data-index="3">
+                <div class="entry-marker"></div>
+                <div class="entry-content">
+                    <div class="entry-header">
+                        <span class="entry-coords">78.9°N, 11.9°E</span>
+                        <span class="entry-date">Sep 2023</span>
+                    </div>
+                    <h4>Arctic Glacier Front Mapping</h4>
+                    <span class="entry-location">Ny Alesund, Svalbard</span>
+                    <p>ASV field operations mapping Kongsbreen and Blomstranda glaciers to detect changes at active calving fronts.</p>
+                </div>
+            </div>
+            <div class="field-entry" data-index="4">
+                <div class="entry-marker"></div>
+                <div class="entry-content">
+                    <div class="entry-header">
+                        <span class="entry-coords">67.6°S, 68.1°W</span>
+                        <span class="entry-date">Dec 2022</span>
+                    </div>
+                    <h4>Antarctic Sea-Ice Study (DEFiANT)</h4>
+                    <span class="entry-location">Rothera, Antarctica</span>
+                    <p>Designed camera units and software for the British Antarctic Survey's DEFiANT program, studying variability of Antarctic sea ice from aircraft.</p>
+                </div>
+            </div>
+            <div class="field-entry" data-index="5">
+                <div class="entry-marker"></div>
+                <div class="entry-content">
+                    <div class="entry-header">
+                        <span class="entry-coords">25.8°N &amp; 34.1°N</span>
+                        <span class="entry-date">2013&ndash;2015</span>
+                    </div>
+                    <h4>DARPA Robotics Challenge</h4>
+                    <span class="entry-location">Miami &amp; Pomona, USA</span>
+                    <p>Sensor integration and control software for Boston Dynamics' Atlas humanoid at IHMC. Team placed 2nd in the competition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Timeline -->
+<section class="section experience" id="experience">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-timeline">
+
+            <div class="exp-item">
+                <div class="exp-marker"></div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Postdoctoral Fellow</h3>
+                        <span class="exp-date">Jun 2025 &ndash; Present</span>
+                    </div>
+                    <h4>Monterey Bay Aquarium Research Institute (MBARI)</h4>
+                    <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Moss Landing, CA</p>
+                    <p>Multi-modal representation learning for underwater navigation. 3D Gaussian splatting for large-scale dense mapping. Self-supervised learning for scene understanding.</p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-marker"></div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Visiting Researcher</h3>
+                        <span class="exp-date">Apr &ndash; Jul 2024</span>
+                    </div>
+                    <h4>Norwegian University of Science and Technology (NTNU)</h4>
+                    <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Trondheim, Norway</p>
+                    <p>Multi-camera perception for underwater vehicle situational awareness. Real-time dense reconstruction of subsea infrastructure and shipwrecks.</p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-marker"></div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Postdoctoral Researcher</h3>
+                        <span class="exp-date">Oct 2022 &ndash; Apr 2025</span>
+                    </div>
+                    <h4>Institute of Experiential Robotics, Northeastern University</h4>
+                    <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
+                    <p>Toyota Research Institute collaboration on multi-modal SLAM. Optimal sensor arrangement research. Arctic glacier mapping expeditions.</p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-marker"></div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Graduate Research Assistant</h3>
+                        <span class="exp-date">Sep 2016 &ndash; Aug 2022</span>
+                    </div>
+                    <h4>Northeastern University Field Robotics Laboratory</h4>
+                    <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
+                    <p>Ph.D. research on multi-camera systems for robust real-time robot perception. Hardware and software design for synchronized multi-camera arrays. AVATAR Xprize competition.</p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-marker"></div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Research Intern</h3>
+                        <span class="exp-date">Jun &ndash; Aug 2018</span>
+                    </div>
+                    <h4>Toyota Research Institute</h4>
+                    <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Cambridge, MA</p>
+                    <p>Driver interruptibility prediction for ADAS speech interfaces. CAN bus data analysis for intelligent vehicle-driver communication timing.</p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-marker"></div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Research Intern</h3>
+                        <span class="exp-date">2013 &ndash; 2014</span>
+                    </div>
+                    <h4>Florida Institute for Human and Machine Cognition (IHMC)</h4>
+                    <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Pensacola, FL</p>
+                    <p>DARPA Robotics Challenge: Sensor integration, controller development, and point cloud processing for Boston Dynamics' Atlas humanoid robot.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Publications Section -->
+<section class="section publications" id="publications">
+    <div class="container">
+        <h2 class="section-title">Selected Publications</h2>
+        <p class="section-subtitle">
+            <a href="https://scholar.google.com/citations?hl=en&user=oIiOy68AAAAJ" target="_blank" class="scholar-link">
+                <i class="fas fa-graduation-cap"></i> View full list on Google Scholar
+            </a>
+        </p>
+
+        <div class="pub-list">
+
+            <div class="pub-item">
+                <span class="pub-year">2025</span>
+                <div class="pub-content">
+                    <h4>A Certifiably Correct Algorithm for Generalized Robot-World and Hand-Eye Calibration</h4>
+                    <p class="pub-authors">Wise, E., <strong>Kaveti, P.</strong>, Chen, Q., Wang, W., Singh, H., Kelly, J., Rosen, D.M. and Giamou, M.</p>
+                    <p class="pub-venue"><em>The International Journal of Robotics Research</em>, 2025</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2025</span>
+                <div class="pub-content">
+                    <h4>Enhancing Situational Awareness in Underwater Robotics with Multi-modal Spatial Perception</h4>
+                    <p class="pub-authors"><strong>Kaveti, P.</strong>, Waldum, A. G., Singh, H., &amp; Ludvigsen, M.</p>
+                    <p class="pub-venue"><em>ICRA Workshop on Field Robotics</em>, 2025</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2024</span>
+                <div class="pub-content">
+                    <h4>Towards Long Term SLAM on Thermal Imagery</h4>
+                    <p class="pub-authors">Keil, C., Gupta, A., <strong>Kaveti, P.</strong>, &amp; Singh, H.</p>
+                    <p class="pub-venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2024</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2024</span>
+                <div class="pub-content">
+                    <h4>OASIS: Optimal Arrangements for Sensing in SLAM</h4>
+                    <p class="pub-authors"><strong>Kaveti, P.</strong>, Giamou, M., Singh, H., &amp; Rosen, D. M.</p>
+                    <p class="pub-venue"><em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2023</span>
+                <div class="pub-content">
+                    <h4>Design and Evaluation of a Generic Visual SLAM Framework for Multi-Camera Systems</h4>
+                    <p class="pub-authors"><strong>P. Kaveti</strong>, S. N. Vaidyanathan, A. T. Chelvan and H. Singh</p>
+                    <p class="pub-venue"><em>IEEE Robotics and Automation Letters (RA-L)</em>, vol. 8, no. 11, 2023</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2023</span>
+                <div class="pub-content">
+                    <h4>Challenges of Indoor SLAM: A Multi-Modal Multi-Floor Dataset for SLAM Evaluation</h4>
+                    <p class="pub-authors"><strong>P. Kaveti</strong> et al.</p>
+                    <p class="pub-venue"><em>IEEE 19th International Conference on Automation Science and Engineering (CASE)</em>, 2023</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2022</span>
+                <div class="pub-content">
+                    <h4>Towards Robot Avatars: Systems and Methods for Teleinteraction at Avatar XPRIZE Semi-Finals</h4>
+                    <p class="pub-authors">Luo, R., Wang, C., Schwarm, E., Keil, C., Mendoza, E., <strong>Kaveti, P.</strong>, et al.</p>
+                    <p class="pub-venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2022</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2021</span>
+                <div class="pub-content">
+                    <h4>Towards Robust VSLAM in Dynamic Environments: A Light Field Approach</h4>
+                    <p class="pub-authors"><strong>Kaveti, P.</strong>, Nir, J. S., &amp; Singh, H.</p>
+                    <p class="pub-venue"><em>IEEE International Conference on Multisensor Fusion and Integration (MFI)</em>, 2021</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2019</span>
+                <div class="pub-content">
+                    <h4>Is Now A Good Time?: An Empirical Study of Vehicle-Driver Communication Timing</h4>
+                    <p class="pub-authors">Semmens, R., Martelaro, N., <strong>Kaveti, P.</strong>, Stent, S., Ju, W.</p>
+                    <p class="pub-venue"><em>ACM CHI Conference on Human Factors in Computing Systems</em>, 2019</p>
+                </div>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-year">2018</span>
+                <div class="pub-content">
+                    <h4>Towards Automated Fish Detection Using Convolutional Neural Networks</h4>
+                    <p class="pub-authors"><strong>Kaveti, P.</strong>, &amp; Singh, H.</p>
+                    <p class="pub-venue"><em>OCEANS - MTS/IEEE Kobe Techno-Oceans</em>, 2018</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Open Source Section -->
+<section class="section opensource" id="opensource">
+    <div class="container">
+        <h2 class="section-title">Open Source</h2>
+        <div class="os-grid">
+
+            <a href="https://github.com/neufieldrobotics/MultiCamSLAM" target="_blank" class="os-card">
+                <div class="os-icon"><i class="fab fa-github"></i></div>
+                <h3>MultiCamSLAM</h3>
+                <p>A generic multi-camera SLAM system for arbitrary camera system configurations.</p>
+            </a>
+
+            <a href="https://github.com/neufieldrobotics/spinnaker_sdk_camera_driver" target="_blank" class="os-card">
+                <div class="os-icon"><i class="fab fa-github"></i></div>
+                <h3>Spinnaker Camera Driver</h3>
+                <p>ROS driver for FLIR cameras integrating Spinnaker SDK with hardware synchronization.</p>
+            </a>
+
+            <a href="https://github.com/PushyamiKaveti/optimal_camera_placement" target="_blank" class="os-card">
+                <div class="os-icon"><i class="fab fa-github"></i></div>
+                <h3>Optimal Camera Placement</h3>
+                <p>Information-theoretic optimization for optimal camera arrangement on mobile robots.</p>
+            </a>
+
+            <a href="https://github.com/neufieldrobotics/rosbag_toolkit" target="_blank" class="os-card">
+                <div class="os-icon"><i class="fab fa-github"></i></div>
+                <h3>Rosbag Toolkit</h3>
+                <p>Read/write, conversion, downsampling, filtering, and visualization of rosbags.</p>
+            </a>
+
+            <a href="https://github.com/neufieldrobotics/NUFR-M3F" target="_blank" class="os-card">
+                <div class="os-icon"><i class="fas fa-database"></i></div>
+                <h3>NUFR-M3F Dataset</h3>
+                <p>Multi-modal multi-floor SLAM dataset with cameras, IMU, and LiDAR sensors.</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- Teaching Section -->
+<section class="section teaching" id="teaching">
+    <div class="container">
+        <h2 class="section-title">Teaching &amp; Mentoring</h2>
+        <div class="teaching-grid">
+            <div class="teaching-card">
+                <div class="teaching-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h3>EECE 7150: Autonomous Field Robots</h3>
+                <p class="teaching-role">Lecturer &bull; Fall 2023</p>
+                <p>Northeastern University. Complete teaching responsibility for this graduate-level course &mdash; designing syllabus, lectures, projects, and assignments.</p>
+            </div>
+            <div class="teaching-card">
+                <div class="teaching-icon"><i class="fas fa-users"></i></div>
+                <h3>EECE 5554: Robot Sensing &amp; Navigation</h3>
+                <p class="teaching-role">Teaching Assistant &bull; Spring 2020</p>
+                <p>Developed materials for the graduate-level course, mentored students on projects, and shared teaching and grading responsibilities.</p>
+            </div>
+            <div class="teaching-card">
+                <div class="teaching-icon"><i class="fas fa-user-graduate"></i></div>
+                <h3>Graduate Student Mentoring</h3>
+                <p class="teaching-role">Field Robotics Laboratory</p>
+                <p>Mentored multiple master's students on theses and projects in robotics and engineering, including students advised by Dr. Singh and Dr. Rosen.</p>
+            </div>
+        </div>
+
+        <div class="talks-section">
+            <h3 class="subsection-title">Invited Talks &amp; Presentations</h3>
+            <div class="talks-list">
+                <div class="talk-item">
+                    <span class="talk-year">2025</span>
+                    <div>
+                        <strong>AID Workshop</strong> &mdash; "3D Vision for Underwater Robot Perception in the Context of AUV Operations"
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <span class="talk-year">2024</span>
+                    <div>
+                        <strong>WHOI AOPE Seminar</strong> &mdash; "Robust Perception for Field Robotics in Extreme Unstructured Environments"
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <span class="talk-year">2022</span>
+                    <div>
+                        <strong>MIT Robust Robotics Group</strong> &mdash; "Towards Robust Perception in Robotics"
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <span class="talk-year">2023</span>
+                    <div>
+                        <strong>New England Robotics Colloquium</strong> &mdash; "High-Resolution 3D Mapping of Sea-Terminating Glaciers Using ASV"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Media Section -->
+<section class="section media" id="media">
+    <div class="container">
+        <h2 class="section-title">In the Media</h2>
+        <div class="media-grid">
+            <div class="media-card">
+                <div class="media-source">Robotics247</div>
+                <h4>Northeastern Researchers Explore the Arctic With Robot to Learn How Fast Glaciers Are Melting</h4>
+                <span class="media-year">2023</span>
+            </div>
+            <div class="media-card">
+                <div class="media-source">Northeastern University News</div>
+                <h4>How fast are Arctic glaciers melting? A team of Northeastern engineers explored the north with a robot and cameras to find out</h4>
+                <span class="media-year">2023</span>
+            </div>
+            <div class="media-card">
+                <div class="media-source">NU Institute of Experiential Robotics</div>
+                <h4>Northeastern Team Advances to Finals of ANA Avatar XPRIZE</h4>
+                <span class="media-year">2022</span>
+            </div>
+            <div class="media-card">
+                <div class="media-source">NU College of Engineering</div>
+                <h4>Creating a Human Avatar in Remote Locations</h4>
+                <span class="media-year">2021</span>
+            </div>
+            <div class="media-card">
+                <div class="media-source">IHMC</div>
+                <h4>IHMC's Running Man Captures 2nd at DARPA Robotics Competition</h4>
+                <span class="media-year">2015</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">I'm always interested in collaborations, speaking opportunities, and connecting with fellow researchers.</p>
+        <div class="contact-grid">
+            <a href="mailto:pushyamis.kaveti@gmail.com" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>pushyamis.kaveti@gmail.com</p>
+            </a>
+            <a href="https://www.mbari.org/person/pushyami-kaveti/" target="_blank" class="contact-card">
+                <i class="fas fa-building-columns"></i>
+                <h4>MBARI</h4>
+                <p>Institutional Profile</p>
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&user=oIiOy68AAAAJ" target="_blank" class="contact-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h4>Google Scholar</h4>
+                <p>Publications &amp; Citations</p>
+            </a>
+            <a href="https://github.com/PushyamiKaveti" target="_blank" class="contact-card">
+                <i class="fab fa-github"></i>
+                <h4>GitHub</h4>
+                <p>Open Source Projects</p>
+            </a>
+            <a href="https://www.linkedin.com/in/pushhyamiikaaveeti/" target="_blank" class="contact-card">
+                <i class="fab fa-linkedin-in"></i>
+                <h4>LinkedIn</h4>
+                <p>Professional Network</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Dr. Pushyami Kaveti. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
