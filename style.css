@@ -505,6 +505,66 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.3; }
 }
 
 /* ============================================
+   NEWS
+   ============================================ */
+.news {
+    background: linear-gradient(180deg, #ffffff 0%, #f5f9fc 100%);
+}
+.news-layout {
+    max-width: 920px;
+    margin: 48px auto 0;
+    display: grid;
+    gap: 32px;
+}
+.news-year-group {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+.news-year {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    line-height: 1;
+    color: var(--ocean-accent);
+    position: sticky;
+    top: 110px;
+}
+.news-list {
+    border-top: 1px solid var(--card-border);
+}
+.news-item {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--card-border);
+}
+.news-date {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ocean-accent);
+    padding-top: 2px;
+}
+.news-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+.news-text em {
+    color: var(--text-primary);
+}
+.news-type {
+    display: inline-block;
+    min-width: 92px;
+    margin-right: 8px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* ============================================
    RESEARCH
    ============================================ */
 .research { background: var(--warm-white); }
@@ -1333,6 +1393,20 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.3; }
     }
     .about-sidebar {
         position: static;
+    }
+    .news-year-group {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .news-year {
+        position: static;
+    }
+    .news-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    .news-type {
+        min-width: 0;
     }
     .research-grid { grid-template-columns: 1fr; }
     .field-entries { grid-template-columns: 1fr; }
