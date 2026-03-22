@@ -117,55 +117,62 @@ document.addEventListener('DOMContentLoaded', () => {
         const newsItems = Array.from(newsList.querySelectorAll('.news-item'));
         const pageSize = Number(newsList.dataset.pageSize) || 5;
         const totalPages = Math.ceil(newsItems.length / pageSize);
+        const prevButton = newsPagination.querySelector('[data-news-page="prev"]');
+        const nextButton = newsPagination.querySelector('[data-news-page="next"]');
+        const pageLinks = Array.from(newsPagination.querySelectorAll('.news-page-link'));
 
-        if (totalPages > 1) {
-            let currentPage = 0;
-            const prevButton = newsPagination.querySelector('[data-news-page="prev"]');
-            const nextButton = newsPagination.querySelector('[data-news-page="next"]');
-            const pageLinks = newsPagination.querySelector('.news-page-links');
+        const updateArrowState = (link, disabled) => {
+            link.classList.toggle('is-disabled', disabled);
+            link.setAttribute('aria-disabled', disabled ? 'true' : 'false');
+            link.tabIndex = disabled ? -1 : 0;
+        };
 
-            const goToPage = (pageIndex) => {
-                currentPage = Math.max(0, Math.min(pageIndex, totalPages - 1));
-                renderNewsPage();
-            };
+        const renderNewsPage = (pageIndex) => {
+            const currentPage = Math.max(1, Math.min(pageIndex, totalPages));
+            const start = (currentPage - 1) * pageSize;
+            const end = start + pageSize;
+            newsList.dataset.currentPage = String(currentPage);
 
-            const renderNewsPage = () => {
-                const start = currentPage * pageSize;
-                const end = start + pageSize;
+            newsItems.forEach((item, index) => {
+                const isVisible = index >= start && index < end;
+                item.hidden = !isVisible;
+                item.classList.toggle('is-hidden', !isVisible);
+            });
 
-                newsItems.forEach((item, index) => {
-                    const isVisible = index >= start && index < end;
-                    item.hidden = !isVisible;
-                    item.classList.toggle('is-hidden', !isVisible);
-                });
+            pageLinks.forEach((link, index) => {
+                const isCurrent = index + 1 === currentPage;
+                link.classList.toggle('is-active', isCurrent);
+                if (isCurrent) {
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
+            });
 
-                prevButton.disabled = currentPage === 0;
-                nextButton.disabled = currentPage === totalPages - 1;
+            updateArrowState(prevButton, currentPage === 1);
+            updateArrowState(nextButton, currentPage === totalPages);
+        };
 
-                pageLinks.querySelectorAll('.news-page-link').forEach((button, index) => {
-                    const isCurrent = index === currentPage;
-                    button.classList.toggle('is-active', isCurrent);
-                    button.setAttribute('aria-current', isCurrent ? 'page' : 'false');
-                });
-            };
+        const currentPage = Number(newsList.dataset.currentPage) || 1;
+        renderNewsPage(currentPage);
 
-            const fragment = document.createDocumentFragment();
-            for (let pageIndex = 0; pageIndex < totalPages; pageIndex += 1) {
-                const button = document.createElement('button');
-                button.type = 'button';
-                button.className = 'news-page-button news-page-link';
-                button.textContent = String(pageIndex + 1);
-                button.setAttribute('aria-label', `Show news page ${pageIndex + 1}`);
-                button.addEventListener('click', () => goToPage(pageIndex));
-                fragment.appendChild(button);
-            }
-            pageLinks.appendChild(fragment);
+        pageLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                renderNewsPage(Number(link.dataset.newsPageLink));
+            });
+        });
 
-            prevButton.addEventListener('click', () => goToPage(currentPage - 1));
-            nextButton.addEventListener('click', () => goToPage(currentPage + 1));
+        prevButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (prevButton.classList.contains('is-disabled')) return;
+            renderNewsPage((Number(newsList.dataset.currentPage) || 1) - 1);
+        });
 
-            newsPagination.hidden = false;
-            renderNewsPage();
-        }
+        nextButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (nextButton.classList.contains('is-disabled')) return;
+            renderNewsPage((Number(newsList.dataset.currentPage) || 1) + 1);
+        });
     }
 });

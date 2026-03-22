@@ -93,7 +93,7 @@
         <p class="section-subtitle">Selected updates across research, fieldwork, and appointments.</p>
 
         <div class="news-layout">
-            <div class="news-list" data-page-size="5">
+            <div class="news-list" data-page-size="5" data-current-page="1">
                 <article class="news-item">
                     <div class="news-date">Aug 2025</div>
                     <p class="news-text">Conducted an ROV survey of whale bones in Utqiagvik, Alaska, building 3D models to study ecological change over time.</p>
@@ -114,51 +114,55 @@
                     <div class="news-date">Oct 2024</div>
                     <p class="news-text">Led a sea-ice survey aboard the USCGC <em>Healy</em> in the Chukchi Sea, collecting imagery and telemetry of newly forming pancake ice.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">Jun 2024</div>
                     <p class="news-text">Deployed ROV Minerva in Trondheim, Norway, for subsea infrastructure inspection and shipwreck mapping.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">Apr 2024</div>
                     <p class="news-text">Joined NTNU as a Visiting Researcher working on multi-camera underwater situational awareness and dense reconstruction.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">2024</div>
                     <p class="news-text">Published <em>OASIS: Optimal Arrangements for Sensing in SLAM</em> at ICRA and <em>Towards Long Term SLAM on Thermal Imagery</em> at IROS.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">2024</div>
                     <p class="news-text">Gave the WHOI AOPE Seminar on robust perception for field robotics in extreme unstructured environments.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">Sep 2023</div>
                     <p class="news-text">Led Arctic glacier front mapping operations in Ny Alesund, Svalbard, using an ASV to study active calving fronts.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">2023</div>
                     <p class="news-text">Published <em>Design and Evaluation of a Generic Visual SLAM Framework for Multi-Camera Systems</em> in IEEE RA-L and <em>Challenges of Indoor SLAM</em> at IEEE CASE.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">2023</div>
                     <p class="news-text">Served as lecturer for Autonomous Field Robotics at Northeastern University.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">Dec 2022</div>
                     <p class="news-text">Contributed camera systems and software for the DEFiANT Antarctic sea-ice study in Rothera, Antarctica.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">Oct 2022</div>
                     <p class="news-text">Joined the Institute of Experiential Robotics at Northeastern University as a Postdoctoral Researcher.</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item is-hidden" hidden>
                     <div class="news-date">2022</div>
                     <p class="news-text">Presented “Towards Robust Perception in Robotics” at the MIT Robust Robotics Group.</p>
                 </article>
             </div>
-            <nav class="news-pagination" aria-label="News pages" hidden>
-                <button class="news-page-button news-page-arrow" type="button" data-news-page="prev" aria-label="Previous news page">&laquo;</button>
-                <div class="news-page-links" aria-live="polite"></div>
-                <button class="news-page-button news-page-arrow" type="button" data-news-page="next" aria-label="Next news page">&raquo;</button>
+            <nav class="news-pagination" aria-label="News pages">
+                <a class="news-page-button news-page-arrow is-disabled" href="#" data-news-page="prev" aria-label="Previous news page" aria-disabled="true">&laquo;</a>
+                <div class="news-page-links" aria-live="polite">
+                    <a class="news-page-button news-page-link is-active" href="#" data-news-page-link="1" aria-current="page">1</a>
+                    <a class="news-page-button news-page-link" href="#" data-news-page-link="2">2</a>
+                    <a class="news-page-button news-page-link" href="#" data-news-page-link="3">3</a>
+                </div>
+                <a class="news-page-button news-page-arrow" href="#" data-news-page="next" aria-label="Next news page">&raquo;</a>
             </nav>
         </div>
     </div>
