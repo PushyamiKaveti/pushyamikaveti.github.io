@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const isVisible = index >= start && index < end;
                 item.hidden = !isVisible;
                 item.classList.toggle('is-hidden', !isVisible);
+                item.style.display = isVisible ? '' : 'none';
             });
 
             pageLinks.forEach((link, index) => {
