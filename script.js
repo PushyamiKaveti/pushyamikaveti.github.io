@@ -122,32 +122,47 @@ document.addEventListener('DOMContentLoaded', () => {
             let currentPage = 0;
             const prevButton = newsPagination.querySelector('[data-news-page="prev"]');
             const nextButton = newsPagination.querySelector('[data-news-page="next"]');
-            const status = newsPagination.querySelector('.news-page-status');
+            const pageLinks = newsPagination.querySelector('.news-page-links');
+
+            const goToPage = (pageIndex) => {
+                currentPage = Math.max(0, Math.min(pageIndex, totalPages - 1));
+                renderNewsPage();
+            };
 
             const renderNewsPage = () => {
                 const start = currentPage * pageSize;
                 const end = start + pageSize;
 
                 newsItems.forEach((item, index) => {
-                    item.hidden = index < start || index >= end;
+                    const isVisible = index >= start && index < end;
+                    item.hidden = !isVisible;
+                    item.classList.toggle('is-hidden', !isVisible);
                 });
 
-                status.textContent = `Page ${currentPage + 1} of ${totalPages}`;
                 prevButton.disabled = currentPage === 0;
                 nextButton.disabled = currentPage === totalPages - 1;
+
+                pageLinks.querySelectorAll('.news-page-link').forEach((button, index) => {
+                    const isCurrent = index === currentPage;
+                    button.classList.toggle('is-active', isCurrent);
+                    button.setAttribute('aria-current', isCurrent ? 'page' : 'false');
+                });
             };
 
-            prevButton.addEventListener('click', () => {
-                if (currentPage === 0) return;
-                currentPage -= 1;
-                renderNewsPage();
-            });
+            const fragment = document.createDocumentFragment();
+            for (let pageIndex = 0; pageIndex < totalPages; pageIndex += 1) {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'news-page-button news-page-link';
+                button.textContent = String(pageIndex + 1);
+                button.setAttribute('aria-label', `Show news page ${pageIndex + 1}`);
+                button.addEventListener('click', () => goToPage(pageIndex));
+                fragment.appendChild(button);
+            }
+            pageLinks.appendChild(fragment);
 
-            nextButton.addEventListener('click', () => {
-                if (currentPage === totalPages - 1) return;
-                currentPage += 1;
-                renderNewsPage();
-            });
+            prevButton.addEventListener('click', () => goToPage(currentPage - 1));
+            nextButton.addEventListener('click', () => goToPage(currentPage + 1));
 
             newsPagination.hidden = false;
             renderNewsPage();
