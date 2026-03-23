@@ -1,0 +1,258 @@
+:root {
+  color-scheme: light;
+  --global-bg-color: #fff;
+  --global-text-color: #000;
+  --global-text-color-light: #828282;
+  --global-theme-color: #b509ac;
+  --global-hover-color: #b509ac;
+  --global-hover-text-color: #fff;
+  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-card-bg-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 57px;
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+p,
+div,
+li,
+span,
+em,
+strong {
+  color: var(--global-text-color);
+}
+
+.container {
+  max-width: 930px;
+}
+
+a {
+  color: var(--global-theme-color);
+}
+
+a:hover {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+}
+
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid var(--global-divider-color);
+  background-color: var(--global-bg-color);
+  opacity: 0.95;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--global-text-color);
+}
+
+.navbar .nav-link:hover {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}
+
+.navbar .nav-item.active > .nav-link {
+  font-weight: 700;
+  color: var(--global-theme-color);
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--global-text-color);
+  border-radius: 1px;
+  margin-bottom: 4px;
+  transition: all 0.2s;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar,
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.post-title {
+  font-family: 'Roboto Slab', serif;
+}
+
+.post-description {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
+}
+
+.post-description a {
+  color: inherit;
+}
+
+.cv {
+  margin-bottom: 40px;
+}
+
+.cv .card {
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+}
+
+.cv .card .list-group-item {
+  background-color: inherit;
+  border-color: var(--global-divider-color);
+}
+
+.cv .card .list-group-item .badge {
+  color: var(--global-card-bg-color) !important;
+  background-color: var(--global-theme-color) !important;
+}
+
+.card-title {
+  font-family: 'Roboto Slab', serif;
+}
+
+.table-cv,
+.table-cv td,
+.table-cv th {
+  background-color: transparent !important;
+  padding: 1px;
+}
+
+.date-column {
+  width: 75px;
+  transform: translateX(-15px) translateY(-5px);
+}
+
+.location {
+  font-size: 0.7rem;
+  white-space: nowrap;
+  color: var(--global-text-color-light);
+}
+
+.iconlocation {
+  color: var(--global-theme-color);
+  font-size: 0.8rem;
+}
+
+.items {
+  margin-top: 0.65rem;
+  padding-left: 1.2rem;
+}
+
+.items li {
+  margin-bottom: 0.2rem;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+#toc-sidebar {
+  position: sticky;
+  top: 84px;
+  padding-top: 0.5rem;
+}
+
+.cv-toc {
+  border-left: 1px solid var(--global-divider-color);
+  padding-left: 1rem;
+}
+
+.cv-toc h6 {
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cv-toc a {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--global-text-color);
+  margin-bottom: 0.45rem;
+  text-decoration: none;
+}
+
+.cv-toc a:hover {
+  color: var(--global-theme-color);
+}
+
+.float-right {
+  float: right;
+}
+
+.section-note {
+  font-size: 0.92rem;
+  color: var(--global-text-color-light);
+}
+
+footer.fixed-bottom {
+  background-color: #1c1c1d;
+  font-size: 0.75rem;
+}
+
+footer.fixed-bottom .container {
+  color: #e8e8e8;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+footer.fixed-bottom a {
+  color: #fff;
+}
+
+footer.fixed-bottom a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  #toc-sidebar {
+    display: none;
+  }
+
+  body {
+    padding-top: 64px;
+  }
+
+  .date-column {
+    transform: none;
+    margin-bottom: 0.75rem;
+  }
+}
