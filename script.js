@@ -176,4 +176,72 @@ document.addEventListener('DOMContentLoaded', () => {
             renderNewsPage((Number(newsList.dataset.currentPage) || 1) + 1);
         });
     }
+
+
+    // ---- Publications pagination ----
+    const pubList = document.querySelector('.pub-list[data-page-size]');
+    const pubPagination = document.querySelector('.pub-pagination');
+    if (pubList && pubPagination) {
+        const pubItems = Array.from(pubList.querySelectorAll('.pub-item'));
+        const pageSize = Number(pubList.dataset.pageSize) || 5;
+        const totalPages = Math.ceil(pubItems.length / pageSize);
+        const prevButton = pubPagination.querySelector('[data-pub-page="prev"]');
+        const nextButton = pubPagination.querySelector('[data-pub-page="next"]');
+        const pageLinks = Array.from(pubPagination.querySelectorAll('.pub-page-link'));
+
+        const updateArrowState = (link, disabled) => {
+            link.classList.toggle('is-disabled', disabled);
+            link.setAttribute('aria-disabled', disabled ? 'true' : 'false');
+            link.tabIndex = disabled ? -1 : 0;
+        };
+
+        const renderPubPage = (pageIndex) => {
+            const currentPage = Math.max(1, Math.min(pageIndex, totalPages));
+            const start = (currentPage - 1) * pageSize;
+            const end = start + pageSize;
+            pubList.dataset.currentPage = String(currentPage);
+
+            pubItems.forEach((item, index) => {
+                const isVisible = index >= start && index < end;
+                item.hidden = !isVisible;
+                item.classList.toggle('is-hidden', !isVisible);
+                item.style.display = isVisible ? '' : 'none';
+            });
+
+            pageLinks.forEach((link, index) => {
+                const isCurrent = index + 1 === currentPage;
+                link.classList.toggle('is-active', isCurrent);
+                if (isCurrent) {
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
+            });
+
+            updateArrowState(prevButton, currentPage === 1);
+            updateArrowState(nextButton, currentPage === totalPages);
+        };
+
+        const currentPage = Number(pubList.dataset.currentPage) || 1;
+        renderPubPage(currentPage);
+
+        pageLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                renderPubPage(Number(link.dataset.pubPageLink));
+            });
+        });
+
+        prevButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (prevButton.classList.contains('is-disabled')) return;
+            renderPubPage((Number(pubList.dataset.currentPage) || 1) - 1);
+        });
+
+        nextButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (nextButton.classList.contains('is-disabled')) return;
+            renderPubPage((Number(pubList.dataset.currentPage) || 1) + 1);
+        });
+    }
 });
