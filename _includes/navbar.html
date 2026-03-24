@@ -1,4 +1,8 @@
-{% assign nav_items = site.data.site.nav[page.nav_key] %}
+{% if page.nav_key == "cv" %}
+{% assign nav_items = site.data.site.nav.cv %}
+{% else %}
+{% assign nav_items = site.data.site.nav.home %}
+{% endif %}
 <nav class="navbar{% if page.navbar_scrolled %} scrolled{% endif %}" id="navbar">
   <div class="nav-container">
     <a href="{{ page.logo_href | default: '#hero' }}" class="nav-logo">{{ site.data.site.profile.short_name }}</a>
