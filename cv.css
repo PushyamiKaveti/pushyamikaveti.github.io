@@ -506,3 +506,33 @@ body.cv-page {
 .cv-hero-inner {
     grid-template-columns: minmax(0, 1fr);
 }
+
+
+.cv-page .talks-section .talks-list {
+    max-width: none;
+    margin: 0;
+}
+
+.cv-page .talks-section .talk-item {
+    display: grid;
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.cv-page .talks-section .talk-year {
+    min-width: 0;
+    padding-top: 2px;
+}
+
+.cv-page .talks-section .talk-item div {
+    min-width: 0;
+    line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+    .cv-page .talks-section .talk-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}
