@@ -1,0 +1,14 @@
+{% assign nav_items = site.data.site.nav[page.nav_key] %}
+<nav class="navbar{% if page.navbar_scrolled %} scrolled{% endif %}" id="navbar">
+  <div class="nav-container">
+    <a href="{{ page.logo_href | default: '#hero' }}" class="nav-logo">{{ site.data.site.profile.short_name }}</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      {% for item in nav_items %}
+      <li><a href="{{ item.href }}"{% if item.active %} class="active"{% endif %}>{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

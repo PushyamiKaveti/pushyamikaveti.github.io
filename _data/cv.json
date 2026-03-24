@@ -1,0 +1,218 @@
+{
+  "subtitle": "Postdoctoral Fellow at MBARI working on multi-camera perception, 3D reconstruction, SLAM, and robotics in underwater and polar environments.",
+  "sidebar": [
+    {
+      "label": "Contact",
+      "href": "#contact"
+    },
+    {
+      "label": "Summary",
+      "href": "#summary"
+    },
+    {
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Education",
+      "href": "#education"
+    },
+    {
+      "label": "Selected Publications",
+      "href": "#publications-list"
+    },
+    {
+      "label": "Invited Talks",
+      "href": "#presentations"
+    },
+    {
+      "label": "Open Source",
+      "href": "#opensource"
+    },
+    {
+      "label": "Field Deployments",
+      "href": "#fieldwork"
+    }
+  ],
+  "contact": [
+    {
+      "label": "Name",
+      "value": "Pushyami Kaveti"
+    },
+    {
+      "label": "Role",
+      "value": "Postdoctoral Fellow"
+    },
+    {
+      "label": "Institution",
+      "value": "Monterey Bay Aquarium Research Institute (MBARI)"
+    },
+    {
+      "label": "Email",
+      "value": "<a href=\"mailto:pkaveti@mbari.org\">pkaveti@mbari.org</a>"
+    },
+    {
+      "label": "Website",
+      "value": "<a href=\"https://www.mbari.org/person/pushyami-kaveti/\" target=\"_blank\" rel=\"noopener noreferrer\">www.mbari.org/person/pushyami-kaveti/</a>"
+    },
+    {
+      "label": "LinkedIn",
+      "value": "<a href=\"https://www.linkedin.com/in/pushhyamiikaaveeti/\" target=\"_blank\" rel=\"noopener noreferrer\">pushhyamiikaaveeti</a>"
+    }
+  ],
+  "summary": "My research focuses on multi-camera perception, 3D reconstruction, and simultaneous localization and mapping in dynamic and visually degraded environments spanning urban, marine, and polar regions.",
+  "experience": [
+    {
+      "role": "Postdoctoral Fellow",
+      "date": "Jun 2025 – Present",
+      "organization": "Monterey Bay Aquarium Research Institute (MBARI)",
+      "location": "Moss Landing, CA",
+      "text": "Multi-modal representation learning for underwater navigation. 3D Gaussian splatting for large-scale dense mapping. Self-supervised learning for scene understanding."
+    },
+    {
+      "role": "Visiting Researcher",
+      "date": "Apr – Jul 2024",
+      "organization": "Norwegian University of Science and Technology (NTNU)",
+      "location": "Trondheim, Norway",
+      "text": "Multi-camera perception for underwater vehicle situational awareness. Real-time dense reconstruction of subsea infrastructure and shipwrecks."
+    },
+    {
+      "role": "Postdoctoral Researcher",
+      "date": "Oct 2022 – Apr 2025",
+      "organization": "Institute of Experiential Robotics, Northeastern University",
+      "location": "Boston, MA",
+      "text": "Toyota Research Institute collaboration on multi-modal SLAM. Optimal sensor arrangement research. Arctic glacier mapping expeditions."
+    },
+    {
+      "role": "Graduate Research Assistant",
+      "date": "Sep 2016 – Aug 2022",
+      "organization": "Northeastern University Field Robotics Laboratory",
+      "location": "Boston, MA",
+      "text": "Ph.D. research on multi-camera systems for robust real-time robot perception. Hardware and software design for synchronized multi-camera arrays. AVATAR Xprize competition."
+    },
+    {
+      "role": "Research Intern",
+      "date": "Jun – Aug 2018",
+      "organization": "Toyota Research Institute",
+      "location": "Cambridge, MA",
+      "text": "Driver interruptibility prediction for ADAS speech interfaces. CAN bus data analysis for intelligent vehicle-driver communication timing."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Computer Science (Robotics)",
+      "date": "2016 – 2022",
+      "organization": "Northeastern University",
+      "location": "Boston, MA",
+      "text": "Thesis: <em>Multi-Camera Sensing for Robust Perception in Robotics</em>. Committee: Hanumant Singh, John Leonard, Ryan Eustice, Chris Amato, Lawson Wong."
+    },
+    {
+      "degree": "M.S. in Computer Engineering",
+      "date": "2012 – 2014",
+      "organization": "University of Florida",
+      "location": "Gainesville, FL",
+      "text": ""
+    },
+    {
+      "degree": "B.Tech. in Computer Science and Engineering",
+      "date": "2007 – 2011",
+      "organization": "Jawaharlal Nehru Technological University",
+      "location": "Anantapur, India",
+      "text": ""
+    }
+  ],
+  "publications": [
+    {
+      "title": "A Certifiably Correct Algorithm for Generalized Robot-World and Hand-Eye Calibration",
+      "authors": "Wise, E., <strong>Kaveti, P.</strong>, Chen, Q., Wang, W., Singh, H., Kelly, J., Rosen, D. M., &amp; Giamou, M.",
+      "venue": "<em>The International Journal of Robotics Research</em>, 2025"
+    },
+    {
+      "title": "Enhancing Situational Awareness in Underwater Robotics with Multi-modal Spatial Perception",
+      "authors": "<strong>Kaveti, P.</strong>, Waldum, A. G., Singh, H., &amp; Ludvigsen, M.",
+      "venue": "<em>arXiv preprint arXiv:2506.06476</em>, ICRA Workshop on Field Robotics, 2025"
+    },
+    {
+      "title": "Considerations for Advancing Seafloor Imaging to Enable Long-term Monitoring",
+      "authors": "Preston, V., <strong>Kaveti, P.</strong>, Giaya, D., Gupta, A., Lubetkin, M., Shank, T., Singh, H., &amp; Fornari, D.",
+      "venue": "<em>Journal of Ocean Technology</em>, 2024"
+    },
+    {
+      "title": "Towards Long Term SLAM on Thermal Imagery",
+      "authors": "Keil, C., Gupta, A., <strong>Kaveti, P.</strong>, &amp; Singh, H.",
+      "venue": "<em>IROS</em>, 2024"
+    },
+    {
+      "title": "OASIS: Optimal Arrangements for Sensing in SLAM",
+      "authors": "<strong>Kaveti, P.</strong>, Giamou, M., Singh, H., &amp; Rosen, D. M.",
+      "venue": "<em>ICRA</em>, 2024"
+    },
+    {
+      "title": "Bridging the Domain Gap between Synthetic and Real-World Data for Autonomous Driving",
+      "authors": "Bai, X., Luo, Y., Jiang, L., Gupta, A., <strong>Kaveti, P.</strong>, Singh, H., &amp; Ostadabbas, S.",
+      "venue": "<em>ACM Journal on Autonomous Transportation Systems</em>, 2024"
+    }
+  ],
+  "talks": [
+    {
+      "year": "2025",
+      "text": "<strong>AID Workshop</strong> &mdash; \"3D Vision for Underwater Robot Perception in the Context of AUV Operations\""
+    },
+    {
+      "year": "2024",
+      "text": "<strong>WHOI AOPE Seminar</strong> &mdash; \"Robust Perception for Field Robotics in Extreme Unstructured Environments\""
+    },
+    {
+      "year": "2022",
+      "text": "<strong>MIT Robust Robotics Group</strong> &mdash; \"Towards Robust Perception in Robotics\""
+    },
+    {
+      "year": "2023",
+      "text": "<strong>New England Robotics Colloquium</strong> &mdash; \"High-Resolution 3D Mapping of Sea-Terminating Glaciers Using ASV\""
+    }
+  ],
+  "open_source": [
+    {
+      "title": "Spinnaker Camera Driver",
+      "text": "ROS driver for FLIR cameras with hardware synchronization support."
+    },
+    {
+      "title": "MultiCamSLAM",
+      "text": "Generic multi-camera SLAM system for arbitrary camera configurations."
+    },
+    {
+      "title": "Optimal Camera Placement",
+      "text": "Information-theoretic optimization for camera arrangement on mobile robots."
+    },
+    {
+      "title": "Rosbag Toolkit",
+      "text": "Read/write, conversion, downsampling, filtering, and visualization of rosbags."
+    },
+    {
+      "title": "NUFR-M3F",
+      "text": "Multi-modal SLAM dataset with cameras, IMU, and lidar across multiple floors."
+    }
+  ],
+  "fieldwork": [
+    {
+      "title": "ROV Survey of Whale Bones",
+      "text": "Utqiagvik, Alaska (August 2025)"
+    },
+    {
+      "title": "Sea Ice Survey from USCGC Healy",
+      "text": "Chukchi Sea, Alaska (October 2024)"
+    },
+    {
+      "title": "ROV Minerva Deployment at NTNU",
+      "text": "Trondheim, Norway (June 2024)"
+    },
+    {
+      "title": "High-resolution Mapping of the Glacier Front",
+      "text": "Ny Alesund, Svalbard (September 2023)"
+    },
+    {
+      "title": "Sensor Platform Design for Antarctic Sea-ice Study",
+      "text": "Rothera Research Station, Antarctica (December 2022)"
+    }
+  ]
+}

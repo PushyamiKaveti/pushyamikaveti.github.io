@@ -1,0 +1,108 @@
+{
+  "title": "Pushyami Kaveti",
+  "description": "Pushyami Kaveti - Postdoctoral Fellow at MBARI. Research in multi-camera perception, 3D reconstruction, SLAM, underwater and field robotics.",
+  "base_styles_version": "20260323h",
+  "cv_styles_version": "20260323n",
+  "script_version": "20260323f",
+  "profile": {
+    "name": "Pushyami Kaveti",
+    "short_name": "PK",
+    "role": "Postdoctoral Fellow",
+    "affiliation": "Monterey Bay Aquarium Research Institute (MBARI)",
+    "tagline": "Multi-camera perception • 3D Reconstruction • SLAM • Underwater & Field Robotics",
+    "hero_lead": "I am a Postdoctoral Fellow at the <strong>Monterey Bay Aquarium Research Institute (MBARI)</strong>, where I work on multi-modal perception for underwater robots. My research spans multi-camera sensing, 3D reconstruction, and Simultaneous Localization and Mapping (SLAM) in dynamic and visually degraded environments — from the deep ocean to Arctic glaciers.",
+    "hero_bio": "I earned my Ph.D. in Computer Science (Robotics) from <strong>Northeastern University</strong>, advised by Dr. Hanumant Singh, with thesis committee members from MIT and Toyota Research Institute. My work has taken me to some of the most extreme environments on Earth, including the Arctic, Antarctic, and deep ocean, where I design and deploy perception systems on autonomous and remotely operated vehicles.",
+    "image": "profile_pic.jpeg",
+    "image_alt": "Pushyami Kaveti",
+    "hero_links": [
+      {
+        "href": "https://scholar.google.com/citations?hl=en&user=oIiOy68AAAAJ",
+        "title": "Google Scholar",
+        "icon": "fas fa-graduation-cap"
+      },
+      {
+        "href": "https://github.com/PushyamiKaveti",
+        "title": "GitHub",
+        "icon": "fab fa-github"
+      },
+      {
+        "href": "https://www.linkedin.com/in/pushhyamiikaaveeti/",
+        "title": "LinkedIn",
+        "icon": "fab fa-linkedin-in"
+      },
+      {
+        "href": "https://www.mbari.org/person/pushyami-kaveti/",
+        "title": "MBARI Profile",
+        "icon": "fas fa-building-columns"
+      }
+    ]
+  },
+  "nav": {
+    "home": [
+      {
+        "label": "About",
+        "href": "#hero"
+      },
+      {
+        "label": "News",
+        "href": "#news"
+      },
+      {
+        "label": "Publications",
+        "href": "#publications"
+      },
+      {
+        "label": "CV",
+        "href": "cv.html"
+      },
+      {
+        "label": "Fieldwork",
+        "href": "#fieldwork"
+      },
+      {
+        "label": "Teaching",
+        "href": "#teaching"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "cv": [
+      {
+        "label": "About",
+        "href": "index.html#hero"
+      },
+      {
+        "label": "News",
+        "href": "index.html#news"
+      },
+      {
+        "label": "Publications",
+        "href": "index.html#publications"
+      },
+      {
+        "label": "CV",
+        "href": "cv.html",
+        "active": true
+      },
+      {
+        "label": "Fieldwork",
+        "href": "index.html#fieldwork"
+      },
+      {
+        "label": "Teaching",
+        "href": "index.html#teaching"
+      },
+      {
+        "label": "Contact",
+        "href": "index.html#contact"
+      }
+    ]
+  },
+  "footer": {
+    "home_year": 2025,
+    "cv_year": 2026,
+    "name": "Pushyami Kaveti"
+  }
+}

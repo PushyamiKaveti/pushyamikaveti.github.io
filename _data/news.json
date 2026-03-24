@@ -1,0 +1,70 @@
+[
+  {
+    "date": "Aug 2025",
+    "text": "Conducted an ROV survey of whale bones in Utqiagvik, Alaska, building 3D models to study ecological change over time."
+  },
+  {
+    "date": "Jun 2025",
+    "text": "Joined MBARI as a Postdoctoral Fellow, focusing on multi-modal underwater perception, dense mapping, and self-supervised scene understanding."
+  },
+  {
+    "date": "2025",
+    "text": "Published <em>A Certifiably Correct Algorithm for Generalized Robot-World and Hand-Eye Calibration</em> in <em>The International Journal of Robotics Research</em>."
+  },
+  {
+    "date": "2025",
+    "text": "Presented <em>Enhancing Situational Awareness in Underwater Robotics with Multi-modal Spatial Perception</em> at the ICRA Workshop on Field Robotics."
+  },
+  {
+    "date": "2025",
+    "text": "Presented <em>3D Vision for Underwater Robot Perception in the Context of AUV Operations</em> at the AID Workshop."
+  },
+  {
+    "date": "Oct 2024",
+    "text": "Led a sea-ice survey aboard the USCGC <em>Healy</em> in the Chukchi Sea, collecting imagery and telemetry of newly forming pancake ice."
+  },
+  {
+    "date": "Jun 2024",
+    "text": "Deployed ROV Minerva in Trondheim, Norway, for subsea infrastructure inspection and shipwreck mapping."
+  },
+  {
+    "date": "Apr 2024",
+    "text": "Joined NTNU as a Visiting Researcher working on multi-camera underwater situational awareness and dense reconstruction."
+  },
+  {
+    "date": "2024",
+    "text": "Published <em>OASIS: Optimal Arrangements for Sensing in SLAM</em> at ICRA and <em>Towards Long Term SLAM on Thermal Imagery</em> at IROS."
+  },
+  {
+    "date": "2024",
+    "text": "Gave the WHOI AOPE Seminar on robust perception for field robotics in extreme unstructured environments."
+  },
+  {
+    "date": "Sep 2023",
+    "text": "Led Arctic glacier front mapping operations in Ny Alesund, Svalbard, using an ASV to study active calving fronts."
+  },
+  {
+    "date": "2023",
+    "text": "Published <em>Design and Evaluation of a Generic Visual SLAM Framework for Multi-Camera Systems</em> in IEEE RA-L and <em>Challenges of Indoor SLAM</em> at IEEE CASE."
+  },
+  {
+    "date": "2023",
+    "text": "Served as lecturer for Autonomous Field Robotics at Northeastern University."
+  },
+  {
+    "date": "2023",
+    "text": "Presented <em>High-Resolution 3D Mapping of Sea-Terminating Glaciers Using ASV</em> at the New England Robotics Colloquium."
+  },
+  {
+    "date": "Dec 2022",
+    "text": "Contributed camera systems and software for the DEFiANT Antarctic sea-ice study in Rothera, Antarctica."
+  },
+  {
+    "date": "Oct 2022",
+    "text": "Joined the Institute of Experiential Robotics at Northeastern University as a Postdoctoral Researcher."
+  },
+  {
+    "date": "2022",
+    "text": "Presented “Towards Robust Perception in Robotics” at the MIT Robust Robotics Group."
+  }
+]

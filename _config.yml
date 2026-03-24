@@ -1,0 +1,6 @@
+title: Pushyami Kaveti
+description: Pushyami Kaveti academic website
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md

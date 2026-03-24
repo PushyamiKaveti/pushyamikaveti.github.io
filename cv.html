@@ -1,46 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pushyami Kaveti | CV</title>
-    <meta name="description" content="Curriculum vitae for Pushyami Kaveti, Postdoctoral Fellow at MBARI.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=20260323h">
-    <link rel="stylesheet" href="cv.css?v=20260323n">
-</head>
-<body class="cv-page">
-
-<nav class="navbar scrolled" id="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="nav-logo">PK</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="index.html#hero">About</a></li>
-            <li><a href="index.html#news">News</a></li>
-            <li><a href="index.html#research">Research</a></li>
-            <li><a href="index.html#publications">Publications</a></li>
-            <li><a href="cv.html" class="active">CV</a></li>
-            <li><a href="index.html#fieldwork">Fieldwork</a></li>
-            <li><a href="index.html#teaching">Teaching</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+---
+layout: default
+title: Pushyami Kaveti | CV
+description: Curriculum vitae for Pushyami Kaveti, Postdoctoral Fellow at MBARI.
+nav_key: cv
+logo_href: 'index.html'
+navbar_scrolled: true
+body_class: cv-page
+footer_year: 2026
+extra_styles:
+  - path: /cv.css
+    version: 20260323n
+---
+{% assign cv = site.data.cv %}
 
 <section class="cv-hero">
     <div class="container cv-hero-inner">
         <div class="cv-hero-copy">
             <p class="cv-eyebrow">Curriculum Vitae</p>
-            <h1 class="cv-title">Pushyami Kaveti</h1>
-            <p class="cv-subtitle">Postdoctoral Fellow at MBARI working on multi-camera perception, 3D reconstruction, SLAM, and robotics in underwater and polar environments.</p>
+            <h1 class="cv-title">{{ site.data.site.profile.name }}</h1>
+            <p class="cv-subtitle">{{ cv.subtitle }}</p>
             <div class="cv-actions">
-                <a class="cv-download" href="Latest_CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Download PDF</a>
+                <a class="cv-download" href="{{ '/Latest_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Download PDF</a>
             </div>
         </div>
     </div>
@@ -51,14 +31,9 @@
         <aside class="cv-sidebar">
             <div class="cv-sidecard">
                 <h3>On This Page</h3>
-                <a href="#contact">Contact</a>
-                <a href="#summary">Summary</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#publications-list">Selected Publications</a>
-                <a href="#presentations">Invited Talks</a>
-                <a href="#opensource">Open Source</a>
-                <a href="#fieldwork">Field Deployments</a>
+                {% for item in cv.sidebar %}
+                <a href="{{ item.href }}">{{ item.label }}</a>
+                {% endfor %}
             </div>
         </aside>
 
@@ -66,197 +41,95 @@
             <section class="cv-card" id="contact">
                 <h2 class="cv-card-title">Contact Information</h2>
                 <div class="cv-contact-lines">
-                    <p><span>Name</span> <strong>Pushyami Kaveti</strong></p>
-                    <p><span>Role</span> <strong>Postdoctoral Fellow</strong></p>
-                    <p><span>Institution</span> <strong>Monterey Bay Aquarium Research Institute (MBARI)</strong></p>
-                    <p><span>Email</span> <strong><a href="mailto:pkaveti@mbari.org">pkaveti@mbari.org</a></strong></p>
-                    <p><span>Website</span> <strong><a href="https://www.mbari.org/person/pushyami-kaveti/" target="_blank" rel="noopener noreferrer">www.mbari.org/person/pushyami-kaveti/</a></strong></p>
-                    <p><span>LinkedIn</span> <strong><a href="https://www.linkedin.com/in/pushhyamiikaaveeti/" target="_blank" rel="noopener noreferrer">pushhyamiikaaveeti</a></strong></p>
+                    {% for item in cv.contact %}
+                    <p><span>{{ item.label }}</span> <strong>{{ item.value }}</strong></p>
+                    {% endfor %}
                 </div>
             </section>
 
             <section class="cv-card" id="summary">
                 <h2 class="cv-card-title">Professional Summary</h2>
-                <p>My research focuses on multi-camera perception, 3D reconstruction, and simultaneous localization and mapping in dynamic and visually degraded environments spanning urban, marine, and polar regions.</p>
+                <p>{{ cv.summary }}</p>
             </section>
 
             <section class="cv-card cv-experience-section experience" id="experience">
                 <h2 class="section-title">Experience</h2>
                 <div class="exp-timeline">
+                    {% for item in cv.experience %}
                     <div class="exp-item">
                         <div class="exp-marker"></div>
                         <div class="exp-content">
                             <div class="exp-header">
-                                <h3>Postdoctoral Fellow</h3>
-                                <span class="exp-date">Jun 2025 &ndash; Present</span>
+                                <h3>{{ item.role }}</h3>
+                                <span class="exp-date">{{ item.date }}</span>
                             </div>
-                            <h4>Monterey Bay Aquarium Research Institute (MBARI)</h4>
-                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Moss Landing, CA</p>
-                            <p>Multi-modal representation learning for underwater navigation. 3D Gaussian splatting for large-scale dense mapping. Self-supervised learning for scene understanding.</p>
+                            <h4>{{ item.organization }}</h4>
+                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> {{ item.location }}</p>
+                            {% if item.text != '' %}<p>{{ item.text }}</p>{% endif %}
                         </div>
                     </div>
-
-                    <div class="exp-item">
-                        <div class="exp-marker"></div>
-                        <div class="exp-content">
-                            <div class="exp-header">
-                                <h3>Visiting Researcher</h3>
-                                <span class="exp-date">Apr &ndash; Jul 2024</span>
-                            </div>
-                            <h4>Norwegian University of Science and Technology (NTNU)</h4>
-                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Trondheim, Norway</p>
-                            <p>Multi-camera perception for underwater vehicle situational awareness. Real-time dense reconstruction of subsea infrastructure and shipwrecks.</p>
-                        </div>
-                    </div>
-
-                    <div class="exp-item">
-                        <div class="exp-marker"></div>
-                        <div class="exp-content">
-                            <div class="exp-header">
-                                <h3>Postdoctoral Researcher</h3>
-                                <span class="exp-date">Oct 2022 &ndash; Apr 2025</span>
-                            </div>
-                            <h4>Institute of Experiential Robotics, Northeastern University</h4>
-                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
-                            <p>Toyota Research Institute collaboration on multi-modal SLAM. Optimal sensor arrangement research. Arctic glacier mapping expeditions.</p>
-                        </div>
-                    </div>
-
-                    <div class="exp-item">
-                        <div class="exp-marker"></div>
-                        <div class="exp-content">
-                            <div class="exp-header">
-                                <h3>Graduate Research Assistant</h3>
-                                <span class="exp-date">Sep 2016 &ndash; Aug 2022</span>
-                            </div>
-                            <h4>Northeastern University Field Robotics Laboratory</h4>
-                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
-                            <p>Ph.D. research on multi-camera systems for robust real-time robot perception. Hardware and software design for synchronized multi-camera arrays. AVATAR Xprize competition.</p>
-                        </div>
-                    </div>
-
-                    <div class="exp-item">
-                        <div class="exp-marker"></div>
-                        <div class="exp-content">
-                            <div class="exp-header">
-                                <h3>Research Intern</h3>
-                                <span class="exp-date">Jun &ndash; Aug 2018</span>
-                            </div>
-                            <h4>Toyota Research Institute</h4>
-                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Cambridge, MA</p>
-                            <p>Driver interruptibility prediction for ADAS speech interfaces. CAN bus data analysis for intelligent vehicle-driver communication timing.</p>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </section>
 
             <section class="cv-card cv-experience-section experience" id="education">
                 <h2 class="section-title">Education</h2>
                 <div class="exp-timeline">
+                    {% for item in cv.education %}
                     <div class="exp-item">
                         <div class="exp-marker"></div>
                         <div class="exp-content">
                             <div class="exp-header">
-                                <h3>Ph.D. in Computer Science (Robotics)</h3>
-                                <span class="exp-date">2016 &ndash; 2022</span>
+                                <h3>{{ item.degree }}</h3>
+                                <span class="exp-date">{{ item.date }}</span>
                             </div>
-                            <h4>Northeastern University</h4>
-                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
-                            <p>Thesis: <em>Multi-Camera Sensing for Robust Perception in Robotics</em>. Committee: Hanumant Singh, John Leonard, Ryan Eustice, Chris Amato, Lawson Wong.</p>
+                            <h4>{{ item.organization }}</h4>
+                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> {{ item.location }}</p>
+                            {% if item.text != '' %}<p>{{ item.text }}</p>{% endif %}
                         </div>
                     </div>
-
-                    <div class="exp-item">
-                        <div class="exp-marker"></div>
-                        <div class="exp-content">
-                            <div class="exp-header">
-                                <h3>M.S. in Computer Engineering</h3>
-                                <span class="exp-date">2012 &ndash; 2014</span>
-                            </div>
-                            <h4>University of Florida</h4>
-                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Gainesville, FL</p>
-                        </div>
-                    </div>
-
-                    <div class="exp-item">
-                        <div class="exp-marker"></div>
-                        <div class="exp-content">
-                            <div class="exp-header">
-                                <h3>B.Tech. in Computer Science and Engineering</h3>
-                                <span class="exp-date">2007 &ndash; 2011</span>
-                            </div>
-                            <h4>Jawaharlal Nehru Technological University</h4>
-                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Anantapur, India</p>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </section>
 
             <section class="cv-card" id="publications-list">
                 <h2 class="cv-card-title">Selected Publications</h2>
                 <div class="cv-publications">
-                    <article class="cv-pub"><div><h3>A Certifiably Correct Algorithm for Generalized Robot-World and Hand-Eye Calibration</h3><p>Wise, E., <strong>Kaveti, P.</strong>, Chen, Q., Wang, W., Singh, H., Kelly, J., Rosen, D. M., &amp; Giamou, M.</p><p><em>The International Journal of Robotics Research</em>, 2025</p></div></article>
-                    <article class="cv-pub"><div><h3>Enhancing Situational Awareness in Underwater Robotics with Multi-modal Spatial Perception</h3><p><strong>Kaveti, P.</strong>, Waldum, A. G., Singh, H., &amp; Ludvigsen, M.</p><p><em>arXiv preprint arXiv:2506.06476</em>, ICRA Workshop on Field Robotics, 2025</p></div></article>
-                    <article class="cv-pub"><div><h3>Considerations for Advancing Seafloor Imaging to Enable Long-term Monitoring</h3><p>Preston, V., <strong>Kaveti, P.</strong>, Giaya, D., Gupta, A., Lubetkin, M., Shank, T., Singh, H., &amp; Fornari, D.</p><p><em>Journal of Ocean Technology</em>, 2024</p></div></article>
-                    <article class="cv-pub"><div><h3>Towards Long Term SLAM on Thermal Imagery</h3><p>Keil, C., Gupta, A., <strong>Kaveti, P.</strong>, &amp; Singh, H.</p><p><em>IROS</em>, 2024</p></div></article>
-                    <article class="cv-pub"><div><h3>OASIS: Optimal Arrangements for Sensing in SLAM</h3><p><strong>Kaveti, P.</strong>, Giamou, M., Singh, H., &amp; Rosen, D. M.</p><p><em>ICRA</em>, 2024</p></div></article>
-                    <article class="cv-pub"><div><h3>Bridging the Domain Gap between Synthetic and Real-World Data for Autonomous Driving</h3><p>Bai, X., Luo, Y., Jiang, L., Gupta, A., <strong>Kaveti, P.</strong>, Singh, H., &amp; Ostadabbas, S.</p><p><em>ACM Journal on Autonomous Transportation Systems</em>, 2024</p></div></article>
+                    {% for item in cv.publications %}
+                    <article class="cv-pub"><div><h3>{{ item.title }}</h3><p>{{ item.authors }}</p><p>{{ item.venue }}</p></div></article>
+                    {% endfor %}
                 </div>
             </section>
 
             <section class="cv-card talks-section" id="presentations">
                 <h2 class="cv-card-title">Invited Talks &amp; Presentations</h2>
                 <div class="talks-list">
+                    {% for item in cv.talks %}
                     <div class="talk-item">
-                        <span class="talk-year">2025</span>
-                        <p class="cv-talk-copy"><strong>AID Workshop</strong> &mdash; "3D Vision for Underwater Robot Perception in the Context of AUV Operations"</p>
+                        <span class="talk-year">{{ item.year }}</span>
+                        <p class="cv-talk-copy">{{ item.text }}</p>
                     </div>
-                    <div class="talk-item">
-                        <span class="talk-year">2024</span>
-                        <p class="cv-talk-copy"><strong>WHOI AOPE Seminar</strong> &mdash; "Robust Perception for Field Robotics in Extreme Unstructured Environments"</p>
-                    </div>
-                    <div class="talk-item">
-                        <span class="talk-year">2022</span>
-                        <p class="cv-talk-copy"><strong>MIT Robust Robotics Group</strong> &mdash; "Towards Robust Perception in Robotics"</p>
-                    </div>
-                    <div class="talk-item">
-                        <span class="talk-year">2023</span>
-                        <p class="cv-talk-copy"><strong>New England Robotics Colloquium</strong> &mdash; "High-Resolution 3D Mapping of Sea-Terminating Glaciers Using ASV"</p>
-                    </div>
+                    {% endfor %}
                 </div>
             </section>
 
             <section class="cv-card" id="opensource">
                 <h2 class="cv-card-title">Open Source and Data</h2>
                 <ul class="cv-simple-list">
-                    <li><strong>Spinnaker Camera Driver</strong> — ROS driver for FLIR cameras with hardware synchronization support.</li>
-                    <li><strong>MultiCamSLAM</strong> — Generic multi-camera SLAM system for arbitrary camera configurations.</li>
-                    <li><strong>Optimal Camera Placement</strong> — Information-theoretic optimization for camera arrangement on mobile robots.</li>
-                    <li><strong>Rosbag Toolkit</strong> — Read/write, conversion, downsampling, filtering, and visualization of rosbags.</li>
-                    <li><strong>NUFR-M3F</strong> — Multi-modal SLAM dataset with cameras, IMU, and lidar across multiple floors.</li>
+                    {% for item in cv.open_source %}
+                    <li><strong>{{ item.title }}</strong> — {{ item.text }}</li>
+                    {% endfor %}
                 </ul>
             </section>
 
             <section class="cv-card" id="fieldwork">
                 <h2 class="cv-card-title">Field Deployments</h2>
                 <ul class="cv-simple-list">
-                    <li><strong>ROV Survey of Whale Bones</strong> — Utqiagvik, Alaska (August 2025)</li>
-                    <li><strong>Sea Ice Survey from USCGC Healy</strong> — Chukchi Sea, Alaska (October 2024)</li>
-                    <li><strong>ROV Minerva Deployment at NTNU</strong> — Trondheim, Norway (June 2024)</li>
-                    <li><strong>High-resolution Mapping of the Glacier Front</strong> — Ny Alesund, Svalbard (September 2023)</li>
-                    <li><strong>Sensor Platform Design for Antarctic Sea-ice Study</strong> — Rothera Research Station, Antarctica (December 2022)</li>
+                    {% for item in cv.fieldwork %}
+                    <li><strong>{{ item.title }}</strong> — {{ item.text }}</li>
+                    {% endfor %}
                 </ul>
             </section>
         </main>
     </div>
 </section>
-
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2026 Pushyami Kaveti. All rights reserved.</p>
-    </div>
-</footer>
-
-<script src="script.js?v=20260322d"></script>
-</body>
-</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+  {% include navbar.html %}
+  {{ content }}
+  {% include footer.html %}
+  <script src="{{ '/script.js' | relative_url }}?v={{ site.data.site.script_version }}"></script>
+</body>
+</html>
