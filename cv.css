@@ -78,8 +78,7 @@ body.cv-page {
     margin-top: 28px;
 }
 
-.cv-download,
-.cv-secondary {
+.cv-download {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -100,16 +99,6 @@ body.cv-page {
     color: #fff;
 }
 
-.cv-secondary {
-    background: #fff;
-    border: 1px solid var(--card-border);
-    color: var(--text-primary);
-}
-
-.cv-secondary:hover {
-    color: var(--ocean-accent);
-    border-color: var(--ocean-accent);
-}
 
 .cv-summary-card,
 .cv-sidecard,
@@ -209,33 +198,30 @@ body.cv-page {
     margin-bottom: 20px;
 }
 
-.cv-info-grid {
+.cv-contact-lines {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px 20px;
+    gap: 10px;
 }
 
-.cv-info-grid div {
-    padding: 14px 16px;
-    border: 1px solid var(--card-border);
-    border-radius: 14px;
-    background: linear-gradient(180deg, #fff 0%, #f8fbfd 100%);
+.cv-contact-lines p {
+    margin: 0;
+    color: rgba(255,255,255,0.86);
+    line-height: 1.7;
 }
 
-.cv-info-grid span {
-    display: block;
-    font-size: 0.76rem;
+.cv-contact-lines span {
+    font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--text-light);
-    margin-bottom: 6px;
+    color: var(--teal);
+    margin-right: 10px;
 }
 
-.cv-info-grid strong,
-.cv-info-grid a {
-    font-size: 0.96rem;
-    color: var(--text-primary);
+.cv-contact-lines strong,
+.cv-contact-lines a {
+    color: #ffffff;
+    font-size: 0.98rem;
 }
 
 .cv-timeline {
@@ -245,9 +231,7 @@ body.cv-page {
 
 .cv-entry,
 .cv-pub {
-    display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
-    gap: 18px;
+    display: block;
     padding-top: 4px;
 }
 
@@ -265,21 +249,6 @@ body.cv-page {
     color: var(--text-secondary);
 }
 
-.cv-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 110px;
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, var(--ocean-accent), var(--teal));
-    color: #fff;
-    font-size: 0.76rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
 
 .cv-entry-meta p {
     font-size: 0.78rem;
@@ -348,7 +317,6 @@ body.cv-page {
         padding-top: 110px;
     }
 
-    .cv-info-grid,
     .cv-entry,
     .cv-pub {
         grid-template-columns: 1fr;
@@ -358,9 +326,6 @@ body.cv-page {
         padding: 22px;
     }
 
-    .cv-badge {
-        min-width: 0;
-    }
 }
 
 
