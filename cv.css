@@ -523,11 +523,18 @@ body.cv-page {
 .cv-page .talks-section .talk-year {
     min-width: 0;
     padding-top: 2px;
+    color: var(--teal);
 }
 
-.cv-page .talks-section .talk-item div {
+.cv-page .talks-section .cv-talk-copy {
+    margin: 0;
     min-width: 0;
     line-height: 1.7;
+    color: rgba(255,255,255,0.9);
+}
+
+.cv-page .talks-section .talk-item strong {
+    color: #ffffff;
 }
 
 @media (max-width: 640px) {
