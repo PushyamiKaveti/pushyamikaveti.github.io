@@ -388,3 +388,116 @@ body.cv-page {
         padding: 60px 22px;
     }
 }
+
+
+body.cv-page {
+    background:
+        radial-gradient(circle at top right, rgba(29, 140, 248, 0.14), transparent 28%),
+        radial-gradient(circle at left 20%, rgba(45, 212, 191, 0.08), transparent 24%),
+        linear-gradient(180deg, var(--deep-ocean) 0%, var(--ocean-dark) 100%);
+    color: rgba(255,255,255,0.82);
+}
+
+.cv-page .navbar {
+    background: rgba(10,22,40,0.9);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.18);
+}
+
+.cv-page .nav-logo {
+    color: #fff;
+}
+
+.cv-page .nav-menu a {
+    color: rgba(255,255,255,0.72);
+}
+
+.cv-page .nav-menu a:hover,
+.cv-page .nav-menu a.active {
+    color: var(--teal);
+    background: rgba(45,212,191,0.08);
+}
+
+.cv-page .nav-toggle span {
+    background: #fff;
+}
+
+.cv-hero {
+    background:
+        radial-gradient(circle at top right, rgba(29, 140, 248, 0.16), transparent 32%),
+        radial-gradient(circle at left center, rgba(45, 212, 191, 0.10), transparent 28%),
+        linear-gradient(180deg, rgba(15,36,64,0.94) 0%, rgba(10,22,40,0.98) 100%);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.cv-title,
+.cv-summary-card h2,
+.cv-card-title {
+    color: #fff;
+}
+
+.cv-subtitle,
+.cv-summary-card span,
+.cv-entry-meta p,
+.cv-pub p,
+.cv-note,
+.cv-card > p,
+.cv-simple-list li,
+.cv-entry-body h4 {
+    color: rgba(255,255,255,0.68);
+}
+
+.cv-summary-card,
+.cv-sidecard,
+.cv-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: none;
+}
+
+.cv-summary-card strong,
+.cv-sidecard h3,
+.cv-info-grid span {
+    color: rgba(255,255,255,0.42);
+}
+
+.cv-sidecard a,
+.cv-info-grid strong,
+.cv-info-grid a,
+.cv-entry-body h3,
+.cv-pub h3 {
+    color: rgba(255,255,255,0.92);
+}
+
+.cv-sidecard a:hover {
+    color: var(--teal);
+}
+
+.cv-info-grid div {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.cv-download {
+    box-shadow: 0 8px 22px rgba(29, 140, 248, 0.22);
+}
+
+.cv-secondary {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.9);
+}
+
+.cv-secondary:hover {
+    color: var(--teal);
+    border-color: var(--teal);
+}
+
+.cv-page .footer {
+    background: transparent;
+    color: rgba(255,255,255,0.72);
+}
+
+.cv-page .footer p {
+    color: rgba(255,255,255,0.72);
+}
