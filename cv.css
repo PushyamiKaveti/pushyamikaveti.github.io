@@ -364,222 +364,27 @@ body.cv-page {
 }
 
 
-body.cv-page {
-    background: linear-gradient(180deg, var(--deep-ocean) 0%, var(--ocean-dark) 100%);
-    color: rgba(255,255,255,0.82);
-}
-
-.cv-page .navbar {
-    background: rgba(10,22,40,0.9);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 1px 10px rgba(0,0,0,0.18);
-}
-
-.cv-page .nav-logo,
-.cv-page .nav-menu a,
-.cv-page .nav-toggle span {
-    color: rgba(255,255,255,0.82);
-}
-
-.cv-page .nav-toggle span {
-    background: rgba(255,255,255,0.82);
-}
-
-.cv-page .nav-menu a:hover,
-.cv-page .nav-menu a.active {
-    color: var(--teal);
-    background: rgba(45,212,191,0.08);
-}
-
-.cv-hero {
-    background:
-        radial-gradient(circle at top right, rgba(29, 140, 248, 0.14), transparent 32%),
-        radial-gradient(circle at left center, rgba(45, 212, 191, 0.12), transparent 28%),
-        linear-gradient(180deg, rgba(15,36,64,0.95) 0%, rgba(10,22,40,0.98) 100%);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.cv-title,
-.cv-summary-card h2,
-.cv-card-title {
-    color: #fff;
-}
-
-.cv-subtitle,
-.cv-summary-card span,
-.cv-card > p,
-.cv-simple-list li,
-.cv-pub p,
-.cv-note,
-.cv-entry-meta p,
-.cv-entry-body h4 {
-    color: rgba(255,255,255,0.66);
-}
-
-.cv-summary-card,
-.cv-sidecard,
-.cv-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
+.cv-experience-section {
+    padding: 80px 28px;
+    border: 0;
     box-shadow: none;
+    overflow: hidden;
 }
 
-.cv-sidecard a,
-.cv-info-grid strong,
-.cv-info-grid a {
-    color: rgba(255,255,255,0.88);
+.cv-experience-section .exp-timeline {
+    margin-top: 48px;
 }
 
-.cv-sidecard h3,
-.cv-summary-card strong,
-.cv-info-grid span {
-    color: rgba(255,255,255,0.45);
-}
-
-.cv-info-grid div {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
-.cv-card-dark {
-    background: linear-gradient(135deg, var(--deep-ocean), var(--ocean-dark));
-    color: #fff;
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
-.cv-card-dark .cv-card-title {
-    color: #fff;
-}
-
-.cv-card-timeline .cv-timeline {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-    padding-left: 40px;
-    gap: 0;
-}
-
-.cv-card-timeline .cv-timeline::before {
-    content: '';
-    position: absolute;
-    left: 15px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, var(--ocean-accent), var(--teal), transparent);
-}
-
-.cv-card-timeline .cv-entry {
-    position: relative;
-    display: block;
-    margin-bottom: 40px;
-    padding-top: 0;
-}
-
-.cv-card-timeline .cv-entry:last-child {
+.cv-experience-section .section-title {
     margin-bottom: 0;
 }
 
-.cv-card-timeline .cv-entry + .cv-entry {
-    border-top: 0;
-    padding-top: 0;
-}
-
-.cv-card-timeline .cv-entry::before {
-    content: '';
-    position: absolute;
-    left: -33px;
-    top: 8px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: var(--teal);
-    border: 3px solid var(--deep-ocean);
-    box-shadow: 0 0 0 3px rgba(45,212,191,0.3);
-}
-
-.cv-card-timeline .cv-entry-meta,
-.cv-card-timeline .cv-entry-body {
-    display: block;
-}
-
-.cv-card-timeline .cv-entry-body {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: var(--radius);
-    padding: 24px 28px;
-    transition: var(--transition);
-}
-
-.cv-card-timeline .cv-entry-body:hover {
-    background: rgba(255,255,255,0.07);
-    border-color: rgba(255,255,255,0.15);
-}
-
-.cv-card-timeline .cv-entry-meta {
-    margin-bottom: 10px;
-}
-
-.cv-card-timeline .cv-badge {
-    background: none;
-    color: var(--teal);
-    min-width: 0;
-    padding: 0;
-    margin-bottom: 6px;
-    letter-spacing: 0.04em;
-}
-
-.cv-card-timeline .cv-entry-meta p {
-    font-size: 0.82rem;
-    color: rgba(255,255,255,0.45);
-}
-
-.cv-card-timeline .cv-entry-meta i {
-    color: var(--teal);
-}
-
-.cv-card-timeline .cv-entry-body h3 {
-    font-size: 1.1rem;
-    color: #fff;
-    margin-bottom: 6px;
-}
-
-.cv-card-timeline .cv-entry-body h4 {
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.7);
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.cv-card-timeline .cv-entry-body p,
-.cv-card-timeline .cv-entry-body li,
-.cv-card-timeline .cv-note {
-    color: rgba(255,255,255,0.62);
-}
-
-.cv-card-timeline .cv-entry-body ul {
-    padding-left: 18px;
-}
-
-.cv-page .footer {
-    background: linear-gradient(135deg, var(--deep-ocean), var(--ocean-dark));
-    color: rgba(255,255,255,0.75);
-}
-
-.cv-page .footer p {
-    color: rgba(255,255,255,0.75);
+.cv-experience-section .section-title::after {
+    margin-top: 16px;
 }
 
 @media (max-width: 768px) {
-    .cv-card-timeline .cv-timeline {
-        padding-left: 30px;
-    }
-
-    .cv-card-timeline .cv-entry::before {
-        left: -28px;
-    }
-
-    .cv-card-timeline .cv-entry-body {
-        padding: 22px;
+    .cv-experience-section {
+        padding: 60px 22px;
     }
 }
