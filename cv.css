@@ -501,3 +501,8 @@ body.cv-page {
 .cv-page .footer p {
     color: rgba(255,255,255,0.72);
 }
+
+
+.cv-hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+}
