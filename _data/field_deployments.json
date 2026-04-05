@@ -74,7 +74,18 @@
       "sublabel_y": 180,
       "label": "USA",
       "sublabel": "DARPA"
+    },
+    {
+      "index": 6,
+      "cx": 420,
+      "cy": 210,
+      "label_x": 438,
+      "label_y": 206,
+      "sublabel_y": 220,
+      "label": "New Site",
+      "sublabel": "45°N"
     }
+
   ],
   "expeditions": [
     {
@@ -124,6 +135,15 @@
       "location": "Miami & Pomona, USA",
       "text": "Sensor integration and control software for Boston Dynamics' Atlas humanoid at IHMC. Team placed 2nd in the competition.",
       "index": 5
+    },
+    {
+      "coords": "45.0°N, 10.0°E",
+      "date": "Jul 2026",
+      "title": "Expedition Title",
+      "location": "Location Name",
+      "text": "Short description of the deployment.",
+      "index": 6
     }
+
   ]
 }
