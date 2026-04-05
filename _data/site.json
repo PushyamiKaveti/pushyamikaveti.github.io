@@ -12,7 +12,7 @@
     "tagline": "Multi-camera perception • 3D Reconstruction • SLAM • Underwater & Field Robotics",
     "hero_lead": "I am a Postdoctoral Fellow at the <strong>Monterey Bay Aquarium Research Institute (MBARI)</strong>, where I work on multi-modal perception for underwater robots. My research spans multi-camera sensing, 3D reconstruction, and Simultaneous Localization and Mapping (SLAM) in dynamic and visually degraded environments — from the deep ocean to Arctic glaciers.",
     "hero_bio": "I earned my Ph.D. in Computer Science (Robotics) from <strong>Northeastern University</strong>, advised by Dr. Hanumant Singh, with thesis committee members from MIT and Toyota Research Institute. My work has taken me to some of the most extreme environments on Earth, including the Arctic, Antarctic, and deep ocean, where I design and deploy perception systems on autonomous and remotely operated vehicles.",
-    "image": "profile_pic.jpeg",
+    "image": "assets/profile_pic.jpeg",
     "image_alt": "Pushyami Kaveti",
     "hero_links": [
       {
