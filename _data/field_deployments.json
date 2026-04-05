@@ -1,0 +1,129 @@
+{
+  "subtitle": "Deploying robotic systems from the Arctic to the Antarctic",
+  "stats": [
+    {
+      "number": "6",
+      "label": "Expeditions"
+    },
+    {
+      "number": "3",
+      "label": "Continents"
+    },
+    {
+      "number": "79°N–68°S",
+      "label": "Latitude Range"
+    }
+  ],
+  "pins": [
+    {
+      "index": 0,
+      "cx": 64,
+      "cy": 52,
+      "label_x": 80,
+      "label_y": 48,
+      "sublabel_y": 62,
+      "label": "Utqiagvik",
+      "sublabel": "71°N"
+    },
+    {
+      "index": 1,
+      "cx": 33,
+      "cy": 56,
+      "label_x": 10,
+      "label_y": 80,
+      "sublabel_y": 94,
+      "label": "Chukchi Sea",
+      "sublabel": "70°N"
+    },
+    {
+      "index": 2,
+      "cx": 529,
+      "cy": 74,
+      "label_x": 548,
+      "label_y": 70,
+      "sublabel_y": 84,
+      "label": "Trondheim",
+      "sublabel": "63°N"
+    },
+    {
+      "index": 3,
+      "cx": 533,
+      "cy": 31,
+      "label_x": 552,
+      "label_y": 27,
+      "sublabel_y": 41,
+      "label": "Svalbard",
+      "sublabel": "79°N"
+    },
+    {
+      "index": 4,
+      "cx": 311,
+      "cy": 438,
+      "label_x": 330,
+      "label_y": 434,
+      "sublabel_y": 448,
+      "label": "Rothera",
+      "sublabel": "68°S"
+    },
+    {
+      "index": 5,
+      "cx": 230,
+      "cy": 170,
+      "label_x": 248,
+      "label_y": 166,
+      "sublabel_y": 180,
+      "label": "USA",
+      "sublabel": "DARPA"
+    }
+  ],
+  "expeditions": [
+    {
+      "coords": "71.3°N, 156.8°W",
+      "date": "Aug 2025",
+      "title": "ROV Survey of Whale Bones",
+      "location": "Utqiagvik, Alaska",
+      "text": "ROV survey studying the ecological significance of subsistence whale remains. Imagery used to construct and label 3D models and detect changes over time.",
+      "index": 0
+    },
+    {
+      "coords": "70°N, 168°W",
+      "date": "Oct 2024",
+      "title": "Sea Ice Survey from USCGC Healy",
+      "location": "Chukchi Sea, Alaska",
+      "text": "Led ROV survey of freshly forming pancake sea ice aboard the Icebreaker Healy, collecting imagery and telemetry to analyze structural properties of Arctic sea ice.",
+      "index": 1
+    },
+    {
+      "coords": "63.4°N, 10.4°E",
+      "date": "Jun 2024",
+      "title": "ROV Minerva — Shipwreck Mapping",
+      "location": "Trondheim, Norway",
+      "text": "Integrated multi-camera rig with inertial sensing on ROV Minerva to inspect subsea infrastructure and the shipwreck Hercules in the Trondheim fjord.",
+      "index": 2
+    },
+    {
+      "coords": "78.9°N, 11.9°E",
+      "date": "Sep 2023",
+      "title": "Arctic Glacier Front Mapping",
+      "location": "Ny Alesund, Svalbard",
+      "text": "ASV field operations mapping Kongsbreen and Blomstranda glaciers to detect changes at active calving fronts.",
+      "index": 3
+    },
+    {
+      "coords": "67.6°S, 68.1°W",
+      "date": "Dec 2022",
+      "title": "Antarctic Sea-Ice Study (DEFiANT)",
+      "location": "Rothera, Antarctica",
+      "text": "Designed camera units and software for the British Antarctic Survey's DEFiANT program, studying variability of Antarctic sea ice from aircraft.",
+      "index": 4
+    },
+    {
+      "coords": "25.8°N & 34.1°N",
+      "date": "2013–2015",
+      "title": "DARPA Robotics Challenge",
+      "location": "Miami & Pomona, USA",
+      "text": "Sensor integration and control software for Boston Dynamics' Atlas humanoid at IHMC. Team placed 2nd in the competition.",
+      "index": 5
+    }
+  ]
+}

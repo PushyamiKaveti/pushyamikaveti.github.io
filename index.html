@@ -8,6 +8,7 @@ footer_year: 2025
 ---
 {% assign profile = site.data.site.profile %}
 {% assign home = site.data.home %}
+{% assign field = site.data.field_deployments %}
 
 <section class="hero" id="hero">
     <div class="hero-particles" id="particles"></div>
@@ -124,9 +125,9 @@ footer_year: 2025
 <section class="section fieldwork" id="fieldwork">
     <div class="container">
         <h2 class="section-title">Field Deployments</h2>
-        <p class="section-subtitle">{{ home.fieldwork.subtitle }}</p>
+        <p class="section-subtitle">{{ field.subtitle }}</p>
         <div class="field-stats">
-            {% for stat in home.fieldwork.stats %}
+            {% for stat in field.stats %}
             <div class="field-stat">
                 <span class="stat-number">{{ stat.number }}</span>
                 <span class="stat-label">{{ stat.label }}</span>
@@ -157,16 +158,18 @@ footer_year: 2025
                     <path d="M791,309 C809,298 833,296 851,305 C868,314 874,331 867,347 C858,365 836,372 814,366 C795,360 782,347 781,331 C780,322 784,314 791,309 Z"/>
                     <path d="M111,470 C229,462 367,459 508,459 C648,459 781,463 901,470 C874,485 810,492 704,494 C615,496 523,498 439,496 C308,493 190,489 111,470 Z"/>
                 </g>
-                <g class="map-pin" data-index="0"><circle cx="64" cy="52" r="16" class="pin-ring"/><circle cx="64" cy="52" r="5" class="pin-dot"/><text x="80" y="48" class="pin-label">Utqiagvik</text><text x="80" y="62" class="pin-sublabel">71°N</text></g>
-                <g class="map-pin" data-index="1"><circle cx="33" cy="56" r="16" class="pin-ring"/><circle cx="33" cy="56" r="5" class="pin-dot"/><text x="10" y="80" class="pin-label">Chukchi Sea</text><text x="10" y="94" class="pin-sublabel">70°N</text></g>
-                <g class="map-pin" data-index="2"><circle cx="529" cy="74" r="16" class="pin-ring"/><circle cx="529" cy="74" r="5" class="pin-dot"/><text x="548" y="70" class="pin-label">Trondheim</text><text x="548" y="84" class="pin-sublabel">63°N</text></g>
-                <g class="map-pin" data-index="3"><circle cx="533" cy="31" r="16" class="pin-ring"/><circle cx="533" cy="31" r="5" class="pin-dot"/><text x="552" y="27" class="pin-label">Svalbard</text><text x="552" y="41" class="pin-sublabel">79°N</text></g>
-                <g class="map-pin" data-index="4"><circle cx="311" cy="438" r="16" class="pin-ring"/><circle cx="311" cy="438" r="5" class="pin-dot"/><text x="330" y="434" class="pin-label">Rothera</text><text x="330" y="448" class="pin-sublabel">68°S</text></g>
-                <g class="map-pin" data-index="5"><circle cx="230" cy="170" r="16" class="pin-ring"/><circle cx="230" cy="170" r="5" class="pin-dot"/><text x="248" y="166" class="pin-label">USA</text><text x="248" y="180" class="pin-sublabel">DARPA</text></g>
+                {% for pin in field.pins %}
+                <g class="map-pin" data-index="{{ pin.index }}">
+                    <circle cx="{{ pin.cx }}" cy="{{ pin.cy }}" r="16" class="pin-ring"/>
+                    <circle cx="{{ pin.cx }}" cy="{{ pin.cy }}" r="5" class="pin-dot"/>
+                    <text x="{{ pin.label_x }}" y="{{ pin.label_y }}" class="pin-label">{{ pin.label }}</text>
+                    <text x="{{ pin.label_x }}" y="{{ pin.sublabel_y }}" class="pin-sublabel">{{ pin.sublabel }}</text>
+                </g>
+                {% endfor %}
             </svg>
         </div>
         <div class="field-entries">
-            {% for item in home.fieldwork.entries %}
+            {% for item in field.expeditions %}
             <div class="field-entry" data-index="{{ forloop.index0 }}">
                 <div class="entry-marker"></div>
                 <div class="entry-content">

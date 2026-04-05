@@ -7,67 +7,6 @@
     "icon": "fas fa-graduation-cap",
     "label": "View full list on Google Scholar"
   },
-  "fieldwork": {
-    "subtitle": "Deploying robotic systems from the Arctic to the Antarctic",
-    "stats": [
-      {
-        "number": "6",
-        "label": "Expeditions"
-      },
-      {
-        "number": "3",
-        "label": "Continents"
-      },
-      {
-        "number": "79°N–68°S",
-        "label": "Latitude Range"
-      }
-    ],
-    "entries": [
-      {
-        "coords": "71.3°N, 156.8°W",
-        "date": "Aug 2025",
-        "title": "ROV Survey of Whale Bones",
-        "location": "Utqiagvik, Alaska",
-        "text": "ROV survey studying the ecological significance of subsistence whale remains. Imagery used to construct and label 3D models and detect changes over time."
-      },
-      {
-        "coords": "70°N, 168°W",
-        "date": "Oct 2024",
-        "title": "Sea Ice Survey from USCGC Healy",
-        "location": "Chukchi Sea, Alaska",
-        "text": "Led ROV survey of freshly forming pancake sea ice aboard the Icebreaker Healy, collecting imagery and telemetry to analyze structural properties of Arctic sea ice."
-      },
-      {
-        "coords": "63.4°N, 10.4°E",
-        "date": "Jun 2024",
-        "title": "ROV Minerva — Shipwreck Mapping",
-        "location": "Trondheim, Norway",
-        "text": "Integrated multi-camera rig with inertial sensing on ROV Minerva to inspect subsea infrastructure and the shipwreck Hercules in the Trondheim fjord."
-      },
-      {
-        "coords": "78.9°N, 11.9°E",
-        "date": "Sep 2023",
-        "title": "Arctic Glacier Front Mapping",
-        "location": "Ny Alesund, Svalbard",
-        "text": "ASV field operations mapping Kongsbreen and Blomstranda glaciers to detect changes at active calving fronts."
-      },
-      {
-        "coords": "67.6°S, 68.1°W",
-        "date": "Dec 2022",
-        "title": "Antarctic Sea-Ice Study (DEFiANT)",
-        "location": "Rothera, Antarctica",
-        "text": "Designed camera units and software for the British Antarctic Survey's DEFiANT program, studying variability of Antarctic sea ice from aircraft."
-      },
-      {
-        "coords": "25.8°N & 34.1°N",
-        "date": "2013–2015",
-        "title": "DARPA Robotics Challenge",
-        "location": "Miami & Pomona, USA",
-        "text": "Sensor integration and control software for Boston Dynamics' Atlas humanoid at IHMC. Team placed 2nd in the competition."
-      }
-    ]
-  },
   "open_source": [
     {
       "href": "https://github.com/neufieldrobotics/MultiCamSLAM",
